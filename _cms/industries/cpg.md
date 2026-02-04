@@ -7,9 +7,9 @@ metaDescription: LinkedIn and narrative strategy for CPG founders. Connect with 
 
 hero:
   tag: CPG
-  headline: "Your Product Deserves Attention."
-  headlineHighlight: "Your Story Deserves Authority."
-  subtext: "For Consumer Packaged Goods (CPG) founders & CEOs who need to connect with investors, distributors, and customers through a founder-led narrative that builds trust and credibility."
+  headline: "Your product deserves attention."
+  headlineHighlight: "Your story deserves authority."
+  subtext: "For CPG founders & leaders looking to connect with investors, distributors, and customers via their corporate narrative."
 
 whoThisIsFor:
   heading: "Who This Is For"

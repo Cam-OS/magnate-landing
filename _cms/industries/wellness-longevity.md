@@ -7,9 +7,9 @@ metaDescription: LinkedIn and narrative strategy for wellness and longevity bran
 
 hero:
   tag: Wellness & Longevity
-  headline: "Build Trust. Stand Out."
-  headlineHighlight: "Help People Live Better."
-  subtext: "For credible wellness operators who need a founder-led narrative that conveys expertise, trust, and authority on LinkedIn and beyond."
+  headline: "Build trust. Stand out."
+  headlineHighlight: "Help people live longer."
+  subtext: "For wellness operators who need an inspiring narrative that conveys expertise, trust, and vision in today's world."
 
 whoThisIsFor:
   heading: "Who This Is For"

@@ -7,9 +7,9 @@ metaDescription: LinkedIn and narrative strategy for founders raising capital. C
 
 hero:
   tag: Raising Capital
-  headline: "Investors Invest in People,"
-  headlineHighlight: "Not Just Products."
-  subtext: "For founders and funds looking to raise capital, we help you communicate trust, vision, and authority — before you even walk into the room."
+  headline: "Investors invest in people,"
+  headlineHighlight: "not just products."
+  subtext: "We help founders and funds communicate trust, vision, and authority before you walk into the room."
 
 whoThisIsFor:
   heading: "Who This Is For"

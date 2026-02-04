@@ -5,12 +5,12 @@ title: "Magnate | B2B Narrative & Content Consultancy"
 metaDescription: "Magnate helps B2B founders craft narratives that close deals. Thought leadership, LinkedIn content, and GTM storytelling for serious founders."
 
 hero:
-  headline: "Every Founder Has a"
-  headlineHighlight1: "Story."
-  headlineMiddle: "We Help"
-  headlineHighlight2: "Chisel"
-  headlineEnd: "It Out."
-  subhead: "Your narrative is already there — buried under meetings, pivots, and product builds. We carve out the message that matters, then turn it into thought leadership content that earns trust, builds authority, and drives pipeline."
+  headline: "Building narratives that sell"
+  headlineHighlight1: "big visions."
+  headlineMiddle: ""
+  headlineHighlight2: ""
+  headlineEnd: ""
+  subhead: "MAGNATE helps B2B companies tell stories that matters through engaging content that earns trust, builds authority, and drives pipeline."
   primaryCta: "Book a Free Meeting"
   secondaryCta: "View Our Services"
 
@@ -20,16 +20,18 @@ stats:
   - number: "$22M+"
     label: "Pipeline Influenced"
   - number: "98%"
-    label: "Long-term Client Retention"
+    label: "Long-Term Client Retention"
+  - number: "#1"
+    label: "Founder-Focused Narrative Partner"
   - number: "5.0"
-    label: "Client Rating"
+    label: "Based on dozens of private client reviews & referrals"
 
 clientsHeading: "Clients We've Worked With"
 
 valueProps:
   tag: "Why Magnate"
-  heading: "We Shape Stories That Move Markets"
-  intro: "Magnate is a narrative and business storytelling consultancy for founders, CEOs, and industry leaders who know the media landscape has shifted — and refuse to be left behind."
+  heading: "We shape stories that move markets"
+  intro: "MAGNATE is a narrative and business storytelling consultancy for bold industry leaders. We specialize in developing unique stories and content strategies that drive results: revenue, fundraising, industry notoriety."
   featuresHeading: "What Sets Us Apart"
   features:
     - "Customer-first storytelling"

@@ -7,9 +7,9 @@ metaDescription: LinkedIn and narrative strategy for solo founders, consultants,
 
 hero:
   tag: Solo Entrepreneurs
-  headline: "You Didn't Start a Business to Become a Content Creator."
-  headlineHighlight: "But Here We Are."
-  subtext: "For solo founders, consultants, and entrepreneurs who need LinkedIn and narrative strategy done right — without the stress of rebranding yourself."
+  headline: "You didn't quit your job to be a content creator."
+  headlineHighlight: "We do that part for you."
+  subtext: "For solo founders, consultants, and entrepreneurs who need LinkedIn and narrative strategy done right and done for you."
 
 whoThisIsFor:
   heading: "Who This Is For"

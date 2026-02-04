@@ -7,9 +7,9 @@ metaDescription: LinkedIn and narrative strategy for franchise brands. Attract q
 
 hero:
   tag: Franchises
-  headline: "Attract the Right Operators."
-  headlineHighlight: "Build a Franchise That Lasts."
-  subtext: "For franchise brands seeking quality franchisees through founder-led thought leadership storytelling and strategic LinkedIn content."
+  headline: "Attract the right operators."
+  headlineHighlight: "Build the industry-leading franchise."
+  subtext: "For franchise brands seeking elite franchisees through founder-led thought leadership content."
 
 whoThisIsFor:
   heading: "Who This Is For"

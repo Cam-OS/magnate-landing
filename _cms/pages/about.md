@@ -6,15 +6,14 @@ metaDescription: "Learn about Magnate and Ross Gardiner, the narrative strategis
 
 heroSection:
   tag: "About Magnate"
-  headline: "Our Storytelling Journey Started Before"
-  headlineHighlight: "\"Personal Branding\""
-  headlineEnd: "Was a Thing"
+  headline: "Journalists-turned-founders telling stories for a"
+  headlineHighlight: "new era"
+  headlineEnd: ""
   paragraphs:
-    - "In 2014, I was a journalist watching something unfold that now seems obvious: brands on social were reaching more people than the publications I was writing for."
-    - "Meanwhile, those same brands were spending tens of thousands to get publicists to convince journalists to tell their story… badly. They could've told it themselves: faster, cheaper, and far more effectively."
-    - "So I built an agency that helped music festivals like Tomorrowland and brands like Red Bull do exactly that."
-    - "Nine years later, Magnate is the second iteration of the same insight:"
-  emphasis: "You don't need media gatekeepers. You can tell your own story, better than they ever could."
+    - "MAGNATE was founded in 2023 to help business leaders tell their story and find customers in a new era of media."
+    - "Gone were the trade publications and traditional media with their gatekeepers. In their place emerged platforms like LinkedIn, Substack, YouTube and millions of podcasts, all democratizing access to engaged audiences for business owners."
+    - "Today, as competition for audience mindshare heats up, telling great stories passionately and authentically has never mattered more."
+  emphasis: ""
 
 bothSides:
   headline: "I've Been on"
@@ -105,12 +104,14 @@ outcomes:
 
 ross:
   tag: "Meet the Founder"
-  headline: "Ross Gardiner, Founder & CEO of Magnate"
+  headline: "About our founder"
+  photo: "/images/photos/ross-gardiner.png"
   paragraphs:
-    - "I'm Ross, founder of Magnate. I've spent the past 15 years in journalism, media strategy, and narrative design for founders and growth-stage companies. Along the way I've built three companies, and sold one."
-    - "My work sits at the intersection of story and revenue: narratives that make people feel something, and positioning that moves them toward a sale."
-    - "I built Magnate to help serious founders communicate at the level their business deserves."
-  closing: "If that's you — we should talk."
+    - "MAGNATE was founded by Ross Gardiner, a serial entrepreneur, business journalist, and brand developer."
+    - "He has spent over a decade working with founders and growth-stage companies, and along the way built three businesses, and sold one to a public company. He currently advises four startups across a several industries."
+    - "His current and former clients include Red Bull, Live Nation and the City of Los Angeles, and has helped them organic PR placements in the New York Times, Los Angeles Times, Vogue and more."
+    - "Ross built MAGNATE because he saw that traditional PR for businesses had become completely ineffectual, and that founder-led content on platforms like LinkedIn, Substack and on-site would dominate the new era."
+  closing: ""
   ctaText: "Book a Conversation"
 
 cta:

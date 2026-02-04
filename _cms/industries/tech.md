@@ -7,13 +7,13 @@ metaDescription: LinkedIn and narrative strategy for fast-growing tech companies
 
 hero:
   tag: Tech
-  headline: "Your Product Moves Fast."
-  headlineHighlight: "Your Story Must Move Faster."
-  subtext: "For fast-growing tech companies that need a founder-led narrative built with precision, speed, and white-glove judgment."
+  headline: "Your industry changes quickly."
+  headlineHighlight: "You need a story that lasts."
+  subtext: "Fast-growing tech companies need a founder-led narrative built with precision, speed, and white-glove judgment."
 
 whoThisIsFor:
-  heading: "Who This Is For"
-  content: "Tech companies who have recently raised $5-25M and need a narrative tight enough for investors and clear enough for customers — before the spotlight hits."
+  heading: "Who we help"
+  content: "Tech companies who have recently raised $5-25M and need a narrative tight enough to close their next round and position them ahead of the competition."
 
 whatWeSolve:
   heading: "What We Solve"
