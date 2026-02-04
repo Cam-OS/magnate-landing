@@ -534,17 +534,19 @@ h3 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 16px;
+    align-items: stretch;
 }
 
 .stat-card {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 14px;
     padding: 20px 24px;
     background: rgba(20, 20, 22, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     transition: border-color 0.2s, background 0.2s;
+    height: 100%;
 }
 
 .stat-card:hover {
@@ -800,6 +802,7 @@ h3 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 32px;
     margin-top: 48px;
+    align-items: stretch;
 }
 
 .card {
@@ -807,6 +810,16 @@ h3 {
     border: 1px solid var(--border-color);
     border-radius: 16px;
     transition: border-color 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card p {
+    flex-grow: 1;
+}
+
+.card-link {
+    margin-top: auto;
 }
 
 .card:hover {
@@ -1153,6 +1166,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    align-items: stretch;
 }
 
 .testimonial-card {
@@ -1161,6 +1175,8 @@ h3 {
     border: 1px solid var(--border-color);
     border-radius: 16px;
     transition: border-color 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 
 .testimonial-card:hover {
@@ -1198,6 +1214,7 @@ h3 {
     font-weight: 500;
     margin-bottom: 24px;
     color: var(--text-primary);
+    flex-grow: 1;
 }
 
 .testimonial-card blockquote strong {
@@ -1345,6 +1362,8 @@ h3 {
 .side-block {
     flex: 1;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .side-block.left {
@@ -1359,6 +1378,9 @@ h3 {
 
 .side-block-content {
     max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .side-block.left .side-block-content {
@@ -1398,7 +1420,8 @@ h3 {
     color: var(--text-primary);
     font-weight: 600;
     margin-bottom: 0;
-    margin-top: 8px;
+    margin-top: auto;
+    padding-top: 16px;
 }
 
 .sides-connector {
@@ -1722,6 +1745,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+    align-items: stretch;
 }
 
 .philosophy-card {
@@ -1729,6 +1753,8 @@ h3 {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
 .philosophy-card h3 {
@@ -1744,6 +1770,7 @@ h3 {
     font-size: 1rem;
     color: var(--text-secondary);
     line-height: 1.6;
+    flex-grow: 1;
 }
 
 /* OUTCOMES SECTION */
