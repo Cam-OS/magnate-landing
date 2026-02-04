@@ -16,13 +16,13 @@ whoThisIsFor:
   items:
     - "CPG founders seeking capital, distribution, or visibility"
     - "Brands looking to connect directly with buyers on LinkedIn"
-    - "Entrepreneurs who want their story to open doors for partnerships, media, and speaking engagements"
+    - "Entrepreneurs who want their story to open doors to partnerships, media etc."
 
 whatWeSolve:
   heading: "What We Solve"
   intro: "Your content needs to:"
   items:
-    - "Demonstrate your credibility, vision, and leadership"
+    - "Demonstrate credibility, vision, and leadership"
     - "Signal you can pivot when the market shifts"
     - "Reach investors, distributors, and buyers where they are"
     - "Establish you as a thought leader, not just a seller"
@@ -49,15 +49,14 @@ whiteGloveService:
         - "Warm introductions and network leverage when opportunities align"
 
 whyChooseUs:
-  heading: "Why CPG Founders Choose Magnate"
+  heading: "Why CPG Founders Choose MAGNATE"
   items:
     - "Two founders with hands-on CPG brand experience"
     - "First-hand experience scaling publicly traded CPG products"
     - "Messaging that convinces investors and distributors you can execute"
     - "Content that balances authority with momentum"
-    - "Avoid AI slop and content factories — we deliver credibility and results"
 
 cta:
   headline: "Momentum drives growth. Storytelling drives belief."
-  subtext: "Build both."
+  subtext: "Let's build both."
 ---

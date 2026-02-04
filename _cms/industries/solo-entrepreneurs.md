@@ -12,12 +12,12 @@ hero:
   subtext: "For solo founders, consultants, and entrepreneurs who need LinkedIn and narrative strategy done right and done for you."
 
 whoThisIsFor:
-  heading: "Who This Is For"
+  heading: "Who We Help"
   content: "Solo founders, consultants, and entrepreneurs who:"
   items:
     - "Know they need to post consistently"
-    - "Want to grow a business without running a media company"
-    - "Need more than vanity metrics — revenue, credibility, and opportunities are the goal"
+    - "Want to focus on their business"
+    - "Want opportunities, not vanity metrics"
 
 whatWeSolve:
   heading: "What We Solve"
@@ -28,7 +28,7 @@ whatWeSolve:
     - "Identify your ideal audience and speak to their core needs"
     - "Position you for stages, podcasts, and partnerships"
     - "Create business development that extends far beyond posting"
-  emphasis: "Posting is just the beginning. The strategy is what creates real value."
+  emphasis: "Content is just the beginning. The strategy is what creates real value."
 
 whiteGloveService:
   heading: "Our White-Glove Solo Entrepreneur Service"
@@ -40,15 +40,14 @@ whiteGloveService:
       items:
         - "Identify your unique white space in the market"
         - "Refine your tone, voice, and cadence"
-        - "Develop a positioning system that resonates with clients and partners"
+        - "Develop a positioning system that resonates"
     - id: content
       label: "Content Engine"
       title: "Content Engine & Reputation Management"
-      lead: "Done-for-you posts, essays, and thought leadership that put you at the center of conversations in your industry."
+      lead: "Done-for-you thought leadership content that puts you at the center of conversations in your industry."
       items:
-        - "No AI slop, no junior-writer shortcuts"
+        - "No AI slop, no junior-writer pulp"
         - "Strategy drives content, not the other way around"
-        - "Consistent publishing cadence that builds momentum"
     - id: bizdev
       label: "Business Development"
       title: "Business Development Support"
@@ -59,7 +58,7 @@ whiteGloveService:
         - "Messaging that positions you as the obvious choice"
 
 caseStudies:
-  heading: "Real Results, Real People. Not Just Posts."
+  heading: "Real People, Real Results"
   items:
     - label: "Fitness & GLP-1 Founder"
       results:
@@ -67,12 +66,12 @@ caseStudies:
         - "Conference strategy + Magnate outreach = $5M pipeline"
     - label: "Pickleball Franchiser"
       results:
-        - "Magnate positioned him as the industry voice"
+        - "MAGNATE positioned him as the industry voice"
         - "LinkedIn became the #1 source of franchise leads"
         - "Expanded internationally; 43rd fastest-growing company in the U.S."
     - label: "Marketing Consultant"
       results:
-        - "From cold, transactional persona to warm, magnetic thought leadership"
+        - "From standoffish persona to warm, magnetic thought leader"
         - "Year-over-year growth exceeded CMO salary levels"
         - "High-demand client roster; consistent media and panel presence"
 
@@ -82,8 +81,8 @@ whyChooseUs:
     - "Message is primary, medium is secondary"
     - "Editorial and strategic judgment from decades in media and business"
     - "Content that drives credibility, leads, and revenue"
-    - "A partner who thinks about your positioning as much as you do"
-  closing: "Your peers notice. Your customers notice. The right people always notice."
+    - "Our founder has been a solo entrepreneur before"
+  closing: ""
 
 cta:
   headline: "Content is the sharp end of the spear."

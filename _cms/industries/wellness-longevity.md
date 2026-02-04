@@ -14,22 +14,22 @@ hero:
 whoThisIsFor:
   heading: "Who This Is For"
   items:
-    - "Wellness operators in longevity, med spas, fitness, GLP1s, peptides, TRT, stem cells, and biohacking"
+    - "Operators in longevity, med spas, fitness, GLP1s, peptides and stem cells"
     - "Founders and operators who want to be credible voices in their industry"
-    - "Companies seeking both B2B (partners, distribution, investors) and B2C (patients/customers) growth"
+    - "Companies seeking B2B (partners, distribution, investors) and B2C (patients/customers) growth"
 
 whatWeSolve:
   heading: "What We Solve"
   intro: "Your content needs to:"
   items:
     - "Convey trust and credibility in a highly saturated industry"
-    - "Differentiate your brand from algorithm-driven hype"
-    - "Connect with both B2B partners and B2C customers"
-    - "Subtly signal readiness for consolidation, investment, or growth opportunities"
-    - "Build a clear, authoritative founder narrative without resorting to clickbait"
+    - "Differentiate your brand from the here-today-gone-tomorrows"
+    - "Connect with B2B partners and B2C customers"
+    - "Subtly explore consolidation, investment, or growth opportunities"
+    - "Build a clear, authoritative narrative, not clickbait"
 
 whiteGloveService:
-  heading: "Our White-Glove Wellness Service"
+  heading: "Our White-Glove Wellness Content Service"
   tabs:
     - id: content
       label: "Content Marketing"
@@ -47,7 +47,7 @@ whiteGloveService:
       items:
         - "Identify and reach potential patients, B2B partners, and investors"
         - "Build lists and initiate conversations through LinkedIn"
-        - "Translate insights from engagement into refined messaging that grows credibility"
+        - "Translate insights into messaging that grows credibility"
     - id: trust
       label: "Trust & Reputation"
       title: "Trust & Reputation Management"
@@ -60,13 +60,13 @@ whiteGloveService:
 whyChooseUs:
   heading: "Why Wellness Operators Choose MAGNATE"
   items:
-    - "Real-world credibility: Ross and team actively use and understand the products and services they promote"
+    - "Real-world credibility: our team is exceptionally fit and healthy"
     - "Dual B2B/B2C strategy: reach customers and partners simultaneously"
     - "White-glove content that builds authority, not just vanity metrics"
     - "Guidance through market consolidation and competitive shakeouts"
-    - "Avoid AI slop — your posts demonstrate expertise, not laziness"
+    - "No AI slop — your posts demonstrate expertise, not laziness"
 
 cta:
-  headline: "Your story is your credibility."
+  headline: "Your big story is your credibility and vision."
   subtext: "Let's make it unmistakable."
 ---

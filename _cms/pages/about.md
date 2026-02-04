@@ -16,21 +16,21 @@ heroSection:
   emphasis: ""
 
 bothSides:
-  headline: "I've Been on"
+  headline: "We've Been on"
   headlineHighlight: "Both Sides"
   headlineEnd: "of Business Storytelling"
   journalism:
     label: "Journalism"
     title: "Editorial Standards & Story Psychology"
-    content: "Journalism taught me editorial standards, story psychology, emotional pacing, and what should never go public."
-    highlight: "If you say something in an interview that would blow up your reputation, I'll catch it before it ever leaves the doc."
+    content: "Journalism taught Ross editorial standards, story psychology, emotional pacing, and what should never go public."
+    highlight: "If you say something in an interview that would blow up your reputation, we catch it before it ever leaves the doc."
   entrepreneurship:
     label: "Entrepreneurship"
     title: "Profit, Perception & ROI"
-    content: "Entrepreneurship taught me what founders actually care about: profit, perception, fear, credibility, and ROI."
-    highlight: "I speak to business owners as a peer — not as a marketer trying to justify a retainer."
+    content: "Entrepreneurship taught us what founders actually care about: profit, perception, fear, credibility, and ROI."
+    highlight: "We speak to business owners as peers — not as a marketer trying to justify a retainer."
   conclusion: "This combination is rare."
-  conclusionText: "Most \"content people\" understand algorithms. Very few understand entrepreneurial humans."
+  conclusionText: "Most \"content people\" understand algorithms. Very few understand entrepreneurs."
 
 competition:
   tag: "The Difference"
@@ -46,12 +46,12 @@ competition:
 whatWeDo:
   tag: "What We Do"
   headline: "What We Actually Do (and Why It Works)"
-  intro: "Our work lives in two lanes:"
+  intro: "Our approach has two phases."
   narrativeDevelopment:
     number: "01"
-    timing: "Month One"
+    timing: "Phase One"
     title: "Narrative Development"
-    description: "Deep strategic work to build your foundation:"
+    description: "We begin with the story:"
     items:
       - "Industry-level research"
       - "Your origin story"
@@ -62,33 +62,32 @@ whatWeDo:
       - "Positioning that sticks"
   narrativeExecution:
     number: "02"
-    timing: "Ongoing"
+    timing: "Phase Two"
     title: "Narrative Execution"
-    description: "Once we understand the story, we deploy it everywhere it matters:"
+    description: "Then we deploy where it matters:"
     items:
       - "LinkedIn content"
       - "Newsletters"
       - "Substacks"
       - "Keynotes"
       - "Press releases"
-      - "Landing pages"
       - "Pitch deck rewrites"
       - "Sales enablement messaging"
-  conclusion: "Consultancies hand you a glossy voice deck that collects dust. Content agencies fire off AI-written posts with no strategic spine."
-  conclusionBold: "Magnate does both — well."
+  conclusion: ""
+  conclusionBold: ""
 
 philosophy:
   tag: "Our Philosophy"
   headline: "The Philosophy Behind Our Content Engine"
   cards:
     - title: "Message Over Medium"
-      content: "LinkedIn is just today's channel. Tomorrow, it'll be something else. The fundamentals of storytelling never change."
+      content: "The fundamentals of storytelling never change. We specialize in LinkedIn and Substack today. But we are always looking for the next big platform."
     - title: "Quality Over Virality"
-      content: "We don't chase dopamine spikes. We chase revenue, credibility, and authority. BuzzFeed chose viral. The New York Times chose quality. Which would you rather be today?"
-    - title: "For the Reluctant Thought Leaders"
-      content: "Our clients aren't trying to be influencers. They don't want fame. They want results — and respect."
+      content: "We don't chase likes, comments and shares spikes. We chase revenue, credibility, and authority."
+    - title: "For Reluctant Thought Leaders"
+      content: "Our clients don't want to be influencers. They want results and respect, not an audience of bots."
     - title: "Anti-AI Slop"
-      content: "ChatGPT-first writers are flooding feeds with lazy, soulless content. Your customers notice. Your competitors notice. Your peers notice. We don't do slop. We write in your voice, not a machine's."
+      content: "ChatGPT-first writers are flooding feeds with lazy, soulless content. Your customers notice. We write extremely high quality content in YOUR voice."
 
 outcomes:
   tag: "Results"
@@ -97,10 +96,10 @@ outcomes:
   items:
     - "Turned LinkedIn into the #1 lead driver for America's 43rd fastest-growing company"
     - "Booked 20 meetings worth $5M in pipeline for a founder — at one conference"
-    - "Helped consultants out-earn their former CMO salaries"
+    - "Helped consultants out-earn their former C-suite salaries"
     - "Built authoritative voices that increased deal velocity, close rate, and inbound demand"
   conclusion: "Content is the product."
-  conclusionBold: "Pipeline is the point."
+  conclusionBold: "Pipeline is the result."
 
 ross:
   tag: "Meet the Founder"
