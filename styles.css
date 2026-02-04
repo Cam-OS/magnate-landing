@@ -542,8 +542,8 @@ h3 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 12px;
-    padding: 24px 16px;
+    gap: 8px;
+    padding: 28px 20px;
     background: rgba(20, 20, 22, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
@@ -556,49 +556,19 @@ h3 {
     background: rgba(20, 20, 22, 0.8);
 }
 
-.stat-icon {
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 222, 89, 0.08);
-    border: 1px solid rgba(255, 222, 89, 0.15);
-    border-radius: 10px;
-    color: var(--gold);
-    flex-shrink: 0;
-}
-
-.stat-icon svg {
-    width: 20px;
-    height: 20px;
-}
-
-.stat-content {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    flex-grow: 1;
-}
-
 .stat-number {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--gold);
     letter-spacing: -0.02em;
     line-height: 1;
 }
 
-.stat-number-text {
-    font-size: 1.1rem;
-}
-
 .stat-label {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     color: var(--text-secondary);
     font-weight: 500;
     line-height: 1.4;
-    opacity: 0.85;
     margin-top: auto;
 }
 
@@ -1963,11 +1933,11 @@ h3 {
     }
 
     .stat-card {
-        padding: 20px 14px;
+        padding: 24px 16px;
     }
 
     .stat-number {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 
     .hero {
@@ -2197,11 +2167,17 @@ h3 {
     .stat-card {
         flex-direction: row;
         text-align: left;
-        padding: 16px 20px;
+        gap: 16px;
+        padding: 20px 24px;
     }
 
-    .stat-content {
-        align-items: flex-start;
+    .stat-number {
+        font-size: 1.5rem;
+        flex-shrink: 0;
+    }
+
+    .stat-label {
+        margin-top: 0;
     }
 
     .cta-group {
