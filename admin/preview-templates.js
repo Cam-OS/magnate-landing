@@ -984,3 +984,4 @@ CMS.registerPreviewTemplate('services', ServicePagePreview);
 
 // Pages - file collection (ONE unified preview that detects page type)
 CMS.registerPreviewTemplate('pages', PagesPreview);
+
