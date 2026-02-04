@@ -1,7 +1,7 @@
 // ===========================================
 // DECAP CMS PREVIEW TEMPLATES
 // ===========================================
-console.log('[preview-templates.js] File loaded - v3');
+console.log('[preview-templates.js] File loaded - v4');
 
 // Register site CSS
 CMS.registerPreviewStyle('/styles.css');
@@ -982,6 +982,10 @@ CMS.registerPreviewTemplate('industries', IndustryPagePreview);
 // Services - file collection
 CMS.registerPreviewTemplate('services', ServicePagePreview);
 
-// Pages - file collection (ONE unified preview that detects page type)
-CMS.registerPreviewTemplate('pages', PagesPreview);
+// Pages - file collection (register each file individually)
+CMS.registerPreviewTemplate('homepage', PagesPreview);
+CMS.registerPreviewTemplate('about', PagesPreview);
+CMS.registerPreviewTemplate('contact', PagesPreview);
+CMS.registerPreviewTemplate('services-landing', PagesPreview);
+CMS.registerPreviewTemplate('industries-landing', PagesPreview);
 
