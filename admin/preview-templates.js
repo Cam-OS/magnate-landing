@@ -1,7 +1,6 @@
 // ===========================================
 // DECAP CMS PREVIEW TEMPLATES
 // ===========================================
-console.log('[preview-templates.js] File loaded - v4');
 
 // Register site CSS
 CMS.registerPreviewStyle('/styles.css');
@@ -660,13 +659,11 @@ var IndustriesLandingPreview = createClass({
 // ===========================================
 var PagesPreview = createClass({
   render: function() {
-    console.log('[PagesPreview] render() called');
     var entry = this.props.entry;
     var data = entry.get('data');
 
     // Get all field keys to detect page type
     var keys = data ? data.keySeq().toArray() : [];
-    console.log('[PagesPreview] Detected keys:', keys);
 
     // Detect page type by unique field presence
     var isHomepage = keys.indexOf('stats') !== -1;
