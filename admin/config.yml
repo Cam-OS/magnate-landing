@@ -1,0 +1,595 @@
+backend:
+  name: github
+  repo: MagnateCam/magnate-website
+  branch: main
+
+media_folder: "images/blog"
+public_folder: "/images/blog"
+
+collections:
+  - name: "pages"
+    label: "Main Pages"
+    files:
+      - name: "homepage"
+        label: "Homepage"
+        file: "_cms/pages/homepage.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden" }
+          - { label: "Permalink", name: "permalink", widget: "hidden" }
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Meta Description", name: "metaDescription", widget: "text" }
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Headline Part 1", name: "headline", widget: "string" }
+              - { label: "Highlight 1", name: "headlineHighlight1", widget: "string" }
+              - { label: "Headline Middle", name: "headlineMiddle", widget: "string" }
+              - { label: "Highlight 2", name: "headlineHighlight2", widget: "string" }
+              - { label: "Headline End", name: "headlineEnd", widget: "string" }
+              - { label: "Subhead", name: "subhead", widget: "text" }
+              - { label: "Primary CTA", name: "primaryCta", widget: "string" }
+              - { label: "Secondary CTA", name: "secondaryCta", widget: "string" }
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+          - { label: "Clients Heading", name: "clientsHeading", widget: "string" }
+          - label: "Value Props"
+            name: "valueProps"
+            widget: "object"
+            fields:
+              - { label: "Tag", name: "tag", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - { label: "Features Heading", name: "featuresHeading", widget: "string" }
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                field: { label: "Feature", name: "feature", widget: "string" }
+              - { label: "CTA Text", name: "cta", widget: "string" }
+              - label: "Impact Stats"
+                name: "impactStats"
+                widget: "list"
+                fields:
+                  - { label: "Number", name: "number", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string" }
+          - label: "Differentiator"
+            name: "differentiator"
+            widget: "object"
+            fields:
+              - { label: "Tag", name: "tag", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Highlight", name: "headlineHighlight", widget: "string" }
+              - { label: "Headline End", name: "headlineEnd", widget: "string" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }
+              - { label: "CTA Text", name: "cta", widget: "string" }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "object"
+            fields:
+              - { label: "Tag", name: "tag", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Testimonials"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Quote (HTML allowed)", name: "quote", widget: "text" }
+                  - { label: "Rating", name: "rating", widget: "string" }
+                  - { label: "Author Title", name: "authorTitle", widget: "string" }
+                  - { label: "Author Company", name: "authorCompany", widget: "string" }
+          - label: "Bottom CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Heading Highlight", name: "headingHighlight", widget: "string" }
+              - { label: "Subtext", name: "subtext", widget: "string" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+      - name: "about"
+        label: "About Page"
+        file: "_cms/pages/about.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden" }
+          - { label: "Permalink", name: "permalink", widget: "hidden" }
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Meta Description", name: "metaDescription", widget: "text" }
+          - label: "Hero Section"
+            name: "heroSection"
+            widget: "object"
+            fields:
+              - { label: "Tag", name: "tag", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Highlight", name: "headlineHighlight", widget: "string" }
+              - { label: "Headline End", name: "headlineEnd", widget: "string" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }
+              - { label: "Emphasis", name: "emphasis", widget: "text" }
+          - label: "Both Sides Section"
+            name: "bothSides"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Highlight", name: "headlineHighlight", widget: "string" }
+              - { label: "Headline End", name: "headlineEnd", widget: "string" }
+              - label: "Journalism"
+                name: "journalism"
+                widget: "object"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Content", name: "content", widget: "text" }
+                  - { label: "Highlight", name: "highlight", widget: "text" }
+              - label: "Entrepreneurship"
+                name: "entrepreneurship"
+                widget: "object"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Content", name: "content", widget: "text" }
+                  - { label: "Highlight", name: "highlight", widget: "text" }
+              - { label: "Conclusion", name: "conclusion", widget: "string" }
+              - { label: "Conclusion Text", name: "conclusionText", widget: "text" }
+          - label: "Philosophy"
+            name: "philosophy"
+            widget: "object"
+            fields:
+              - { label: "Tag", name: "tag", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Content", name: "content", widget: "text" }
+          - label: "Ross Section"
+            name: "ross"
+            widget: "object"
+            fields:
+              - { label: "Tag", name: "tag", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }
+              - { label: "Closing", name: "closing", widget: "string" }
+              - { label: "CTA Text", name: "ctaText", widget: "string" }
+          - label: "Bottom CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Subtext", name: "subtext", widget: "text" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+      - name: "contact"
+        label: "Contact Page"
+        file: "_cms/pages/contact.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden" }
+          - { label: "Permalink", name: "permalink", widget: "hidden" }
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Meta Description", name: "metaDescription", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Highlight", name: "headlineHighlight", widget: "string" }
+              - { label: "Subhead", name: "subhead", widget: "text" }
+          - label: "Contact Info"
+            name: "contactInfo"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Bold Text", name: "boldText", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+              - { label: "Direct Contact Text", name: "directContactText", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+      - name: "services-landing"
+        label: "Services Landing Page"
+        file: "_cms/pages/services-landing.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden" }
+          - { label: "Permalink", name: "permalink", widget: "hidden" }
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Meta Description", name: "metaDescription", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Highlight", name: "headlineHighlight", widget: "string" }
+              - { label: "Subhead", name: "subhead", widget: "text" }
+          - { label: "Services Heading", name: "servicesHeading", widget: "string" }
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Link", name: "link", widget: "string" }
+          - label: "Process"
+            name: "process"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Steps"
+                name: "steps"
+                widget: "list"
+                fields:
+                  - { label: "Number", name: "number", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Position", name: "position", widget: "select", options: ["left", "right"] }
+          - label: "Bottom CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+      - name: "industries-landing"
+        label: "Industries Landing Page"
+        file: "_cms/pages/industries-landing.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden" }
+          - { label: "Permalink", name: "permalink", widget: "hidden" }
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Meta Description", name: "metaDescription", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Highlight", name: "headlineHighlight", widget: "string" }
+              - { label: "Subhead", name: "subhead", widget: "text" }
+          - label: "Industries"
+            name: "industries"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Link", name: "link", widget: "string" }
+          - label: "Bottom CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Subtext", name: "subtext", widget: "text" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+
+  - name: "services"
+    label: "Service Pages"
+    files:
+      - name: "linkedin-storytelling"
+        label: "LinkedIn Storytelling"
+        file: "_cms/services/linkedin-storytelling.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden" }
+          - { label: "Permalink", name: "permalink", widget: "hidden" }
+          - { label: "Slug", name: "slug", widget: "hidden" }
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Meta Description", name: "metaDescription", widget: "text" }
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Tag", name: "tag", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Headline Highlight", name: "headlineHighlight", widget: "string" }
+              - { label: "Subtext", name: "subtext", widget: "text" }
+          - label: "Overview Section"
+            name: "overview"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Lead Text", name: "leadText", widget: "text" }
+              - { label: "Body Text", name: "bodyText", widget: "text" }
+          - label: "Deliverables"
+            name: "deliverables"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string" }
+              - label: "Tabs"
+                name: "tabs"
+                widget: "list"
+                fields:
+                  - { label: "Tab ID", name: "id", widget: "string" }
+                  - { label: "Tab Label", name: "label", widget: "string" }
+                  - { label: "Tab Title", name: "title", widget: "string" }
+                  - { label: "Lead Text", name: "lead", widget: "string" }
+                  - { label: "Content", name: "content", widget: "text" }
+          - label: "Process Steps"
+            name: "process"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string" }
+              - label: "Steps"
+                name: "steps"
+                widget: "list"
+                fields:
+                  - { label: "Number", name: "number", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Position", name: "position", widget: "select", options: ["left", "right"] }
+          - label: "Trust Section"
+            name: "trust"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Lead Text", name: "leadText", widget: "text" }
+              - { label: "Emphasis Text", name: "emphasisText", widget: "string" }
+              - { label: "Body Text", name: "bodyText", widget: "text" }
+              - { label: "CTA Text", name: "ctaText", widget: "string" }
+              - { label: "CTA Link", name: "ctaLink", widget: "string" }
+          - label: "Bottom CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+      - name: "company-narrative"
+        label: "Company Narrative"
+        file: "_cms/services/company-narrative.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden" }
+          - { label: "Permalink", name: "permalink", widget: "hidden" }
+          - { label: "Slug", name: "slug", widget: "hidden" }
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Meta Description", name: "metaDescription", widget: "text" }
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Tag", name: "tag", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Headline Highlight", name: "headlineHighlight", widget: "string" }
+              - { label: "Subtext", name: "subtext", widget: "text" }
+          - label: "Overview Section"
+            name: "overview"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Lead Text", name: "leadText", widget: "text" }
+              - { label: "Body Text", name: "bodyText", widget: "text" }
+          - label: "Deliverables"
+            name: "deliverables"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string" }
+              - label: "Tabs"
+                name: "tabs"
+                widget: "list"
+                fields:
+                  - { label: "Tab ID", name: "id", widget: "string" }
+                  - { label: "Tab Label", name: "label", widget: "string" }
+                  - { label: "Tab Title", name: "title", widget: "string" }
+                  - { label: "Lead Text", name: "lead", widget: "string" }
+                  - { label: "Content", name: "content", widget: "text" }
+          - label: "Process"
+            name: "process"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string" }
+              - label: "Month One"
+                name: "monthOne"
+                widget: "object"
+                fields:
+                  - { label: "Number", name: "number", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Lead", name: "lead", widget: "string" }
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    field: { label: "Item", name: "item", widget: "string" }
+                  - { label: "Emphasis", name: "emphasis", widget: "string" }
+              - label: "Month Two"
+                name: "monthTwo"
+                widget: "object"
+                fields:
+                  - { label: "Number", name: "number", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Lead", name: "lead", widget: "string" }
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    field: { label: "Item", name: "item", widget: "string" }
+              - { label: "Conclusion", name: "conclusion", widget: "string" }
+              - { label: "Conclusion Highlight", name: "conclusionHighlight", widget: "string" }
+          - label: "Bottom CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+
+  - name: "industries"
+    label: "Industry Pages"
+    folder: "_cms/industries"
+    create: false
+    extension: "md"
+    slug: "{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "layouts/industry-page.njk"
+
+      - label: "Permalink"
+        name: "permalink"
+        widget: "hidden"
+
+      - label: "Slug"
+        name: "slug"
+        widget: "hidden"
+
+      - label: "Page Title"
+        name: "title"
+        widget: "string"
+        required: true
+
+      - label: "Meta Description"
+        name: "metaDescription"
+        widget: "text"
+        required: true
+        hint: "SEO description shown in search results"
+
+      - label: "Hero Section"
+        name: "hero"
+        widget: "object"
+        fields:
+          - { label: "Tag", name: "tag", widget: "string" }
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Headline Highlight", name: "headlineHighlight", widget: "string" }
+          - { label: "Subtext", name: "subtext", widget: "text" }
+
+      - label: "Who This Is For"
+        name: "whoThisIsFor"
+        widget: "object"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string", default: "Who This Is For" }
+          - { label: "Content", name: "content", widget: "text", required: false }
+          - label: "List Items"
+            name: "items"
+            widget: "list"
+            required: false
+            field: { label: "Item", name: "item", widget: "string" }
+
+      - label: "What We Solve"
+        name: "whatWeSolve"
+        widget: "object"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string", default: "What We Solve" }
+          - { label: "Intro", name: "intro", widget: "text", required: false }
+          - label: "List Items"
+            name: "items"
+            widget: "list"
+            field: { label: "Item", name: "item", widget: "string" }
+          - { label: "Emphasis Text", name: "emphasis", widget: "text", required: false }
+
+      - label: "White-Glove Service"
+        name: "whiteGloveService"
+        widget: "object"
+        fields:
+          - { label: "Section Heading", name: "heading", widget: "string" }
+          - label: "Service Tabs"
+            name: "tabs"
+            widget: "list"
+            fields:
+              - { label: "Tab ID", name: "id", widget: "string", hint: "Lowercase, no spaces" }
+              - { label: "Tab Label", name: "label", widget: "string", hint: "Button text" }
+              - { label: "Tab Title", name: "title", widget: "string" }
+              - { label: "Lead Text", name: "lead", widget: "text" }
+              - label: "List Items"
+                name: "items"
+                widget: "list"
+                field: { label: "Item", name: "item", widget: "string" }
+
+      - label: "Case Studies"
+        name: "caseStudies"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Section Heading", name: "heading", widget: "string" }
+          - label: "Studies"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - label: "Results"
+                name: "results"
+                widget: "list"
+                field: { label: "Result", name: "result", widget: "string" }
+
+      - label: "Why Choose Us"
+        name: "whyChooseUs"
+        widget: "object"
+        fields:
+          - { label: "Section Heading", name: "heading", widget: "string" }
+          - label: "List Items"
+            name: "items"
+            widget: "list"
+            field: { label: "Item", name: "item", widget: "string" }
+          - { label: "Closing Text", name: "closing", widget: "text", required: false }
+
+      - label: "Bottom CTA"
+        name: "cta"
+        widget: "object"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Subtext", name: "subtext", widget: "string" }
+
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "blog"
+    create: true
+    extension: "md"
+    slug: "{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "layouts/blog-post.njk"
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        required: true
+
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        required: true
+
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Content Strategy"
+          - "LinkedIn"
+          - "SEO"
+          - "Case Studies"
+        required: true
+
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+        required: true
+
+      - label: "Featured Image Alt Text"
+        name: "featured_image_alt"
+        widget: "string"
+        required: true
+
+      - label: "Intro"
+        name: "intro"
+        widget: "text"
+        required: true
+        hint: "Brief introduction paragraph shown below the title"
+
+      - label: "Body Content"
+        name: "body"
+        widget: "markdown"
+        required: true
+        buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - quote
+          - bulleted-list
+          - numbered-list

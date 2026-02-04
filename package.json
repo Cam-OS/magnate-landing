@@ -1,0 +1,17 @@
+{
+  "name": "magnate-website",
+  "version": "1.0.0",
+  "description": "Magnate website with Eleventy and Decap CMS",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "dev": "eleventy --serve --watch"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.14",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ metaDescription }}">
+    <link rel="icon" type="image/png" href="/images/logos/favicon.png">
+    <title>{{ title }} | Magnate</title>
+    <link rel="stylesheet" href="/styles.css?v=102">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/index.html" class="logo"><img src="/images/logos/magnate-logo.png" alt="Magnate"></a>
+            <div class="nav-links">
+                <div class="nav-dropdown">
+                    <a href="/services.html">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="/services/linkedin-storytelling.html">LinkedIn Storytelling</a>
+                        <a href="/services/company-narrative.html">Company Narrative</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="/industries.html">Industries</a>
+                    <div class="dropdown-menu">
+                        <a href="/industries/tech.html">Tech</a>
+                        <a href="/industries/solo-entrepreneurs.html">Solo Entrepreneurs</a>
+                        <a href="/industries/franchises.html">Franchises</a>
+                        <a href="/industries/cpg.html">CPG</a>
+                        <a href="/industries/wellness-longevity.html">Wellness & Longevity</a>
+                        <a href="/industries/raising-capital.html">Raising Capital</a>
+                    </div>
+                </div>
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-cta">
+                <button type="button" onclick="openCalendly(event)" class="btn btn-primary">Book a Call</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-links">
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-header">Services</div>
+                <div class="mobile-dropdown-content">
+                    <a href="/services.html">All Services</a>
+                    <a href="/services/linkedin-storytelling.html">LinkedIn Storytelling</a>
+                    <a href="/services/company-narrative.html">Company Narrative</a>
+                </div>
+            </div>
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-header">Industries</div>
+                <div class="mobile-dropdown-content">
+                    <a href="/industries.html">All Industries</a>
+                    <a href="/industries/tech.html">Tech</a>
+                    <a href="/industries/solo-entrepreneurs.html">Solo Entrepreneurs</a>
+                    <a href="/industries/franchises.html">Franchises</a>
+                    <a href="/industries/cpg.html">CPG</a>
+                    <a href="/industries/wellness-longevity.html">Wellness & Longevity</a>
+                    <a href="/industries/raising-capital.html">Raising Capital</a>
+                </div>
+            </div>
+            <a href="/about.html">About</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+        <div class="mobile-menu-cta">
+            <button type="button" onclick="openCalendly(event)" class="btn btn-primary btn-large">Book a Call</button>
+        </div>
+    </div>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="industry-hero">
+            <div class="container">
+                <div class="industry-hero-content">
+                    <span class="section-tag">{{ hero.tag }}</span>
+                    <h1>{{ hero.headline }} <span class="highlight">{{ hero.headlineHighlight }}</span></h1>
+                    <p class="industry-hero-subtext">{{ hero.subtext }}</p>
+                    <button type="button" onclick="openCalendly(event)" class="btn btn-primary btn-large">Book a Strategy Call <span class="btn-arrow">→</span></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 1: WHO & WHAT WE SOLVE -->
+        <section class="industry-section">
+            <div class="container">
+                <div class="industry-flow">
+                    <div class="industry-flow-item left">
+                        <div class="industry-flow-content">
+                            <h3>{{ whoThisIsFor.heading }}</h3>
+                            {% if whoThisIsFor.content %}
+                            <p>{{ whoThisIsFor.content }}</p>
+                            {% endif %}
+                            {% if whoThisIsFor.items %}
+                            <ul class="industry-list">
+                                {% for item in whoThisIsFor.items %}
+                                <li>{{ item }}</li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="industry-flow-item right">
+                        <div class="industry-flow-content">
+                            <h3>{{ whatWeSolve.heading }}</h3>
+                            {% if whatWeSolve.intro %}
+                            <p>{{ whatWeSolve.intro }}</p>
+                            {% endif %}
+                            {% if whatWeSolve.items %}
+                            <ul class="industry-list">
+                                {% for item in whatWeSolve.items %}
+                                <li>{{ item }}</li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                            {% if whatWeSolve.emphasis %}
+                            <p class="industry-emphasis">{{ whatWeSolve.emphasis }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: WHITE-GLOVE SERVICE -->
+        <section class="industry-section alt-bg">
+            <div class="container">
+                <h2 class="section-heading-center">{{ whiteGloveService.heading }}</h2>
+                <div class="industry-service-tabs">
+                    <div class="industry-tabs-nav">
+                        {% for tab in whiteGloveService.tabs %}
+                        <button class="industry-tab-btn{% if loop.first %} active{% endif %}" data-tab="{{ tab.id }}">{{ tab.label }}</button>
+                        {% endfor %}
+                    </div>
+                    <div class="industry-tabs-content">
+                        {% for tab in whiteGloveService.tabs %}
+                        <div class="industry-tab-panel{% if loop.first %} active{% endif %}" id="{{ tab.id }}">
+                            <div class="industry-tab-panel-content">
+                                <h3>{{ tab.title }}</h3>
+                                <p class="industry-tab-lead">{{ tab.lead }}</p>
+                                <ul class="industry-list">
+                                    {% for item in tab.items %}
+                                    <li>{{ item }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% if caseStudies %}
+        <!-- SECTION 3: CASE STUDIES -->
+        <section class="industry-section">
+            <div class="container">
+                <h2 class="section-heading-center">{{ caseStudies.heading }}</h2>
+                <div class="case-study-grid">
+                    {% for study in caseStudies.items %}
+                    <div class="case-study-card">
+                        <span class="case-study-label">{{ study.label }}</span>
+                        <ul class="case-study-results">
+                            {% for result in study.results %}
+                            <li>{{ result }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        {% endif %}
+
+        <!-- SECTION: WHY CHOOSE US -->
+        <section class="industry-section">
+            <div class="container">
+                <div class="why-choose-block">
+                    <h2>{{ whyChooseUs.heading }}</h2>
+                    <ul class="why-choose-list">
+                        {% for item in whyChooseUs.items %}
+                        <li>
+                            <span class="check-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                            <span>{{ item }}</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <p class="why-choose-closing">{{ whyChooseUs.closing }}</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOTTOM CTA SECTION -->
+        <section class="industry-cta-section">
+            <div class="container">
+                <h3>{{ cta.headline }}</h3>
+                <p class="industry-cta-subtext">{{ cta.subtext }}</p>
+                <button type="button" onclick="openCalendly(event)" class="btn btn-primary btn-large">Book a Strategy Call <span class="btn-arrow">→</span></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="/index.html" class="logo"><img src="/images/logos/magnate-logo.png" alt="Magnate"></a>
+                <div class="footer-links">
+                    <a href="mailto:ross@magnatesocial.com">ross@magnatesocial.com</a>
+                    <a href="https://www.linkedin.com/in/ross-gardiner-12584098/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+                <p>&copy; 2025 Magnate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openCalendly(e) {
+            if (e) e.preventDefault();
+            if (typeof Calendly !== 'undefined') {
+                Calendly.initPopupWidget({
+                    url: 'https://calendly.com/ross-magnatesocial/onboarding-interview'
+                });
+                return false;
+            }
+        }
+
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const dropdowns = document.querySelectorAll('.mobile-dropdown');
+
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', () => {
+                    menuToggle.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                    document.body.classList.toggle('menu-open');
+                });
+
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        menuToggle.classList.remove('active');
+                        mobileMenu.classList.remove('active');
+                        document.body.classList.remove('menu-open');
+                    });
+                });
+            }
+
+            dropdowns.forEach(dropdown => {
+                const header = dropdown.querySelector('.mobile-dropdown-header');
+                if (header) {
+                    header.addEventListener('click', () => {
+                        dropdown.classList.toggle('active');
+                    });
+                }
+            });
+
+            // Industry Service Tabs
+            const tabBtns = document.querySelectorAll('.industry-tab-btn');
+            const tabPanels = document.querySelectorAll('.industry-tab-panel');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const tabId = btn.dataset.tab;
+
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabPanels.forEach(p => p.classList.remove('active'));
+
+                    btn.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+
+            // Scroll reveal for industry flow items
+            const flowItems = document.querySelectorAll('.industry-flow-item');
+            const flowObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('reveal-visible');
+                        }, index * 150);
+                        flowObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            flowItems.forEach(item => flowObserver.observe(item));
+        });
+    </script>
+</body>
+</html>

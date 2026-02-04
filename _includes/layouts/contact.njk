@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ metaDescription }}">
+    <link rel="icon" type="image/png" href="/images/logos/favicon.png">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/styles.css?v=102">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/index.html" class="logo"><img src="/images/logos/magnate-logo.png" alt="Magnate"></a>
+            <div class="nav-links">
+                <div class="nav-dropdown">
+                    <a href="/services.html">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="/services/linkedin-storytelling.html">LinkedIn Storytelling</a>
+                        <a href="/services/company-narrative.html">Company Narrative</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="/industries.html">Industries</a>
+                    <div class="dropdown-menu">
+                        <a href="/industries/tech.html">Tech</a>
+                        <a href="/industries/solo-entrepreneurs.html">Solo Entrepreneurs</a>
+                        <a href="/industries/franchises.html">Franchises</a>
+                        <a href="/industries/cpg.html">CPG</a>
+                        <a href="/industries/wellness-longevity.html">Wellness & Longevity</a>
+                        <a href="/industries/raising-capital.html">Raising Capital</a>
+                    </div>
+                </div>
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-cta">
+                <button type="button" onclick="openCalendly(event)" class="btn btn-primary">Book a Call</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu-links">
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-header">Services</div>
+                <div class="mobile-dropdown-content">
+                    <a href="/services.html">All Services</a>
+                    <a href="/services/linkedin-storytelling.html">LinkedIn Storytelling</a>
+                    <a href="/services/company-narrative.html">Company Narrative</a>
+                </div>
+            </div>
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-header">Industries</div>
+                <div class="mobile-dropdown-content">
+                    <a href="/industries.html">All Industries</a>
+                    <a href="/industries/tech.html">Tech</a>
+                    <a href="/industries/solo-entrepreneurs.html">Solo Entrepreneurs</a>
+                    <a href="/industries/franchises.html">Franchises</a>
+                    <a href="/industries/cpg.html">CPG</a>
+                    <a href="/industries/wellness-longevity.html">Wellness & Longevity</a>
+                    <a href="/industries/raising-capital.html">Raising Capital</a>
+                </div>
+            </div>
+            <a href="/about.html">About</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+        <div class="mobile-menu-cta">
+            <button type="button" onclick="openCalendly(event)" class="btn btn-primary btn-large">Book a Call</button>
+        </div>
+    </div>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h1>{{ hero.headline }} <span class="highlight">{{ hero.headlineHighlight }}</span></h1>
+                <p class="contact-subhead">{{ hero.subhead }}</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" id="first-name" name="first-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" name="last-name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="text" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="company-website">Company Website</label>
+                                <input type="text" id="company-website" name="company-website" placeholder="example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="linkedin-url">LinkedIn URL</label>
+                                <input type="text" id="linkedin-url" name="linkedin-url" placeholder="linkedin.com/in/yourprofile">
+                            </div>
+                            <div class="form-group">
+                                <label for="revenue">Annual Revenue</label>
+                                <select id="revenue" name="revenue">
+                                    <option value="" disabled selected>Select range</option>
+                                    <option value="under-500k">Under $500K</option>
+                                    <option value="500k-1m">$500K - $1M</option>
+                                    <option value="1m-5m">$1M - $5M</option>
+                                    <option value="5m-10m">$5M - $10M</option>
+                                    <option value="10m-50m">$10M - $50M</option>
+                                    <option value="50m-plus">$50M+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us a little about your project or the challenges you're looking to solve."></textarea>
+                            </div>
+                            <button type="submit" id="submit-btn" class="btn btn-primary btn-large">Send Message <span class="btn-arrow">→</span></button>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <h2>{{ contactInfo.heading }}</h2>
+                        <ul class="contact-list">
+                            {% for item in contactInfo.items %}
+                            <li>
+                                <span class="contact-list-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                </span>
+                                <span><strong>{{ item.boldText }}</strong> {{ item.text }}</span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        <div class="contact-direct">
+                            <p>{{ contactInfo.directContactText }}</p>
+                            <a href="mailto:{{ contactInfo.email }}" class="contact-email">{{ contactInfo.email }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="/index.html" class="logo"><img src="/images/logos/magnate-logo.png" alt="Magnate"></a>
+                <div class="footer-links">
+                    <a href="mailto:ross@magnatesocial.com">ross@magnatesocial.com</a>
+                    <a href="https://www.linkedin.com/in/ross-gardiner-12584098/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+                <p>&copy; 2025 Magnate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openCalendly(e) {
+            if (e) e.preventDefault();
+            if (typeof Calendly !== 'undefined') {
+                Calendly.initPopupWidget({ url: 'https://calendly.com/ross-magnatesocial/onboarding-interview' });
+                return false;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const dropdowns = document.querySelectorAll('.mobile-dropdown');
+
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', () => {
+                    menuToggle.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                    document.body.classList.toggle('menu-open');
+                });
+
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        menuToggle.classList.remove('active');
+                        mobileMenu.classList.remove('active');
+                        document.body.classList.remove('menu-open');
+                    });
+                });
+            }
+
+            dropdowns.forEach(dropdown => {
+                const header = dropdown.querySelector('.mobile-dropdown-header');
+                if (header) {
+                    header.addEventListener('click', () => {
+                        dropdown.classList.toggle('active');
+                    });
+                }
+            });
+
+            const form = document.getElementById('contact-form');
+            const submitBtn = document.getElementById('submit-btn');
+            const formStatus = document.getElementById('form-status');
+
+            if (form) {
+                form.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = 'Sending...';
+                    formStatus.className = 'form-status';
+                    formStatus.textContent = '';
+
+                    const data = {
+                        firstName: document.getElementById('first-name').value,
+                        lastName: document.getElementById('last-name').value,
+                        email: document.getElementById('email').value,
+                        company: document.getElementById('company').value,
+                        companyWebsite: document.getElementById('company-website').value,
+                        linkedinUrl: document.getElementById('linkedin-url').value,
+                        revenue: document.getElementById('revenue').value,
+                        message: document.getElementById('message').value
+                    };
+
+                    try {
+                        const response = await fetch('/.netlify/functions/submit-contact', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(data)
+                        });
+
+                        if (response.ok) {
+                            formStatus.className = 'form-status success';
+                            formStatus.textContent = 'Thank you! We\'ll be in touch soon.';
+                            form.reset();
+                        } else {
+                            throw new Error('Submission failed');
+                        }
+                    } catch (error) {
+                        formStatus.className = 'form-status error';
+                        formStatus.textContent = 'Something went wrong. Please try again or email us directly.';
+                    }
+
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Send Message <span class="btn-arrow">→</span>';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

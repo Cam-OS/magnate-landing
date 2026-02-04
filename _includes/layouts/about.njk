@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ metaDescription }}">
+    <link rel="icon" type="image/png" href="/images/logos/favicon.png">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/styles.css?v=102">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/index.html" class="logo"><img src="/images/logos/magnate-logo.png" alt="Magnate"></a>
+            <div class="nav-links">
+                <div class="nav-dropdown">
+                    <a href="/services.html">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="/services/linkedin-storytelling.html">LinkedIn Storytelling</a>
+                        <a href="/services/company-narrative.html">Company Narrative</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="/industries.html">Industries</a>
+                    <div class="dropdown-menu">
+                        <a href="/industries/tech.html">Tech</a>
+                        <a href="/industries/solo-entrepreneurs.html">Solo Entrepreneurs</a>
+                        <a href="/industries/franchises.html">Franchises</a>
+                        <a href="/industries/cpg.html">CPG</a>
+                        <a href="/industries/wellness-longevity.html">Wellness & Longevity</a>
+                        <a href="/industries/raising-capital.html">Raising Capital</a>
+                    </div>
+                </div>
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-cta">
+                <button type="button" onclick="openCalendly(event)" class="btn btn-primary">Book a Call</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu-links">
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-header">Services</div>
+                <div class="mobile-dropdown-content">
+                    <a href="/services.html">All Services</a>
+                    <a href="/services/linkedin-storytelling.html">LinkedIn Storytelling</a>
+                    <a href="/services/company-narrative.html">Company Narrative</a>
+                </div>
+            </div>
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-header">Industries</div>
+                <div class="mobile-dropdown-content">
+                    <a href="/industries.html">All Industries</a>
+                    <a href="/industries/tech.html">Tech</a>
+                    <a href="/industries/solo-entrepreneurs.html">Solo Entrepreneurs</a>
+                    <a href="/industries/franchises.html">Franchises</a>
+                    <a href="/industries/cpg.html">CPG</a>
+                    <a href="/industries/wellness-longevity.html">Wellness & Longevity</a>
+                    <a href="/industries/raising-capital.html">Raising Capital</a>
+                </div>
+            </div>
+            <a href="/about.html">About</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+        <div class="mobile-menu-cta">
+            <button type="button" onclick="openCalendly(event)" class="btn btn-primary btn-large">Book a Call</button>
+        </div>
+    </div>
+
+    <main>
+        <section class="about-hero-section">
+            <div class="container">
+                <div class="about-hero-grid">
+                    <div class="about-hero-image">
+                        <div class="image-placeholder"><span>Image</span></div>
+                    </div>
+                    <div class="about-hero-content">
+                        <span class="section-tag">{{ heroSection.tag }}</span>
+                        <h1>{{ heroSection.headline }} <span class="highlight">{{ heroSection.headlineHighlight }}</span> {{ heroSection.headlineEnd }}</h1>
+                        {% for paragraph in heroSection.paragraphs %}
+                        <p>{{ paragraph }}</p>
+                        {% endfor %}
+                        <p class="hero-emphasis">{{ heroSection.emphasis }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="both-sides-section">
+            <div class="container">
+                <div class="both-sides-intro">
+                    <h2>{{ bothSides.headline }} <span class="highlight">{{ bothSides.headlineHighlight }}</span> {{ bothSides.headlineEnd }}</h2>
+                </div>
+                <div class="sides-flow">
+                    <div class="side-block left">
+                        <div class="side-block-content">
+                            <span class="side-label">{{ bothSides.journalism.label }}</span>
+                            <h3>{{ bothSides.journalism.title }}</h3>
+                            <p>{{ bothSides.journalism.content }}</p>
+                            <p class="side-highlight">{{ bothSides.journalism.highlight }}</p>
+                        </div>
+                    </div>
+                    <div class="sides-connector">
+                        <div class="connector-line"></div>
+                        <div class="connector-icon">+</div>
+                        <div class="connector-line"></div>
+                    </div>
+                    <div class="side-block right">
+                        <div class="side-block-content">
+                            <span class="side-label">{{ bothSides.entrepreneurship.label }}</span>
+                            <h3>{{ bothSides.entrepreneurship.title }}</h3>
+                            <p>{{ bothSides.entrepreneurship.content }}</p>
+                            <p class="side-highlight">{{ bothSides.entrepreneurship.highlight }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sides-conclusion-block">
+                    <p><span class="gold">{{ bothSides.conclusion }}</span> {{ bothSides.conclusionText }}</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="competition-section">
+            <div class="container">
+                <div class="competition-grid">
+                    <div class="competition-content">
+                        <span class="section-tag">{{ competition.tag }}</span>
+                        <h2>{{ competition.headline }}</h2>
+                        {% for paragraph in competition.paragraphs %}
+                        <p>{{ paragraph }}</p>
+                        {% endfor %}
+                        <p class="competition-emphasis"><span class="gold">{{ competition.emphasis }}</span> {{ competition.emphasisText }}</p>
+                    </div>
+                    <div class="competition-quote">
+                        <blockquote>{{ competition.quote }}</blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="what-we-do-section">
+            <div class="container">
+                <div class="what-header">
+                    <span class="section-tag">{{ whatWeDo.tag }}</span>
+                    <h2>{{ whatWeDo.headline }}</h2>
+                    <p class="what-intro">{{ whatWeDo.intro }}</p>
+                </div>
+                <div class="what-grid">
+                    <div class="what-card">
+                        <div class="what-card-header">
+                            <span class="what-number">{{ whatWeDo.narrativeDevelopment.number }}</span>
+                            <span class="what-timing">{{ whatWeDo.narrativeDevelopment.timing }}</span>
+                        </div>
+                        <h3>{{ whatWeDo.narrativeDevelopment.title }}</h3>
+                        <p>{{ whatWeDo.narrativeDevelopment.description }}</p>
+                        <ul class="what-list">
+                            {% for item in whatWeDo.narrativeDevelopment.items %}
+                            <li><span class="check">✓</span> {{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="what-card">
+                        <div class="what-card-header">
+                            <span class="what-number">{{ whatWeDo.narrativeExecution.number }}</span>
+                            <span class="what-timing">{{ whatWeDo.narrativeExecution.timing }}</span>
+                        </div>
+                        <h3>{{ whatWeDo.narrativeExecution.title }}</h3>
+                        <p>{{ whatWeDo.narrativeExecution.description }}</p>
+                        <ul class="what-list">
+                            {% for item in whatWeDo.narrativeExecution.items %}
+                            <li><span class="check">✓</span> {{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <p class="what-conclusion">{{ whatWeDo.conclusion }} <strong>{{ whatWeDo.conclusionBold }}</strong></p>
+            </div>
+        </section>
+
+        <section class="philosophy-section">
+            <div class="container">
+                <div class="philosophy-header">
+                    <span class="section-tag">{{ philosophy.tag }}</span>
+                    <h2>{{ philosophy.headline }}</h2>
+                </div>
+                <div class="philosophy-grid">
+                    {% for card in philosophy.cards %}
+                    <div class="philosophy-card">
+                        <h3>{{ card.title }}</h3>
+                        <p>{{ card.content }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <section class="outcomes-section">
+            <div class="container">
+                <div class="outcomes-content">
+                    <span class="section-tag">{{ outcomes.tag }}</span>
+                    <h2>{{ outcomes.headline }}</h2>
+                    <p class="outcomes-lead">{{ outcomes.lead }}</p>
+                    <ul class="outcomes-list">
+                        {% for item in outcomes.items %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                    <p class="outcomes-conclusion">{{ outcomes.conclusion }} <strong>{{ outcomes.conclusionBold }}</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="ross-section">
+            <div class="container">
+                <div class="ross-grid">
+                    <div class="ross-image">
+                        <img src="/images/photos/ross-portrait.jpeg" alt="Ross Gardiner, founder of Magnate">
+                    </div>
+                    <div class="ross-content">
+                        <span class="section-tag">{{ ross.tag }}</span>
+                        <h2>{{ ross.headline }}</h2>
+                        {% for paragraph in ross.paragraphs %}
+                        <p>{{ paragraph }}</p>
+                        {% endfor %}
+                        <p class="ross-closing">{{ ross.closing }}</p>
+                        <div class="ross-cta">
+                            <button type="button" onclick="openCalendly(event)" class="btn btn-primary">{{ ross.ctaText }} <span class="btn-arrow">→</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>{{ cta.headline }}</h2>
+                <p>{{ cta.subtext }}</p>
+                <button type="button" onclick="openCalendly(event)" class="btn btn-primary btn-large">{{ cta.buttonText }} <span class="btn-arrow">→</span></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="/index.html" class="logo"><img src="/images/logos/magnate-logo.png" alt="Magnate"></a>
+                <div class="footer-links">
+                    <a href="mailto:ross@magnatesocial.com">ross@magnatesocial.com</a>
+                    <a href="https://www.linkedin.com/in/ross-gardiner-12584098/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+                <p>&copy; 2025 Magnate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openCalendly(e) {
+            if (e) e.preventDefault();
+            if (typeof Calendly !== 'undefined') {
+                Calendly.initPopupWidget({ url: 'https://calendly.com/ross-magnatesocial/onboarding-interview' });
+                return false;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const dropdowns = document.querySelectorAll('.mobile-dropdown');
+
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', () => {
+                    menuToggle.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                    document.body.classList.toggle('menu-open');
+                });
+
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        menuToggle.classList.remove('active');
+                        mobileMenu.classList.remove('active');
+                        document.body.classList.remove('menu-open');
+                    });
+                });
+            }
+
+            dropdowns.forEach(dropdown => {
+                const header = dropdown.querySelector('.mobile-dropdown-header');
+                if (header) {
+                    header.addEventListener('click', () => {
+                        dropdown.classList.toggle('active');
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

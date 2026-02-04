@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ metaDescription }}">
+    <link rel="icon" type="image/png" href="/images/logos/favicon.png">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/styles.css?v=102">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/index.html" class="logo"><img src="/images/logos/magnate-logo.png" alt="Magnate"></a>
+            <div class="nav-links">
+                <div class="nav-dropdown">
+                    <a href="/services.html">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="/services/linkedin-storytelling.html">LinkedIn Storytelling</a>
+                        <a href="/services/company-narrative.html">Company Narrative</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="/industries.html">Industries</a>
+                    <div class="dropdown-menu">
+                        <a href="/industries/tech.html">Tech</a>
+                        <a href="/industries/solo-entrepreneurs.html">Solo Entrepreneurs</a>
+                        <a href="/industries/franchises.html">Franchises</a>
+                        <a href="/industries/cpg.html">CPG</a>
+                        <a href="/industries/wellness-longevity.html">Wellness & Longevity</a>
+                        <a href="/industries/raising-capital.html">Raising Capital</a>
+                    </div>
+                </div>
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            <div class="nav-cta">
+                <button type="button" onclick="openCalendly(event)" class="btn btn-primary">Book a Call</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu-links">
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-header">Services</div>
+                <div class="mobile-dropdown-content">
+                    <a href="/services.html">All Services</a>
+                    <a href="/services/linkedin-storytelling.html">LinkedIn Storytelling</a>
+                    <a href="/services/company-narrative.html">Company Narrative</a>
+                </div>
+            </div>
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-header">Industries</div>
+                <div class="mobile-dropdown-content">
+                    <a href="/industries.html">All Industries</a>
+                    <a href="/industries/tech.html">Tech</a>
+                    <a href="/industries/solo-entrepreneurs.html">Solo Entrepreneurs</a>
+                    <a href="/industries/franchises.html">Franchises</a>
+                    <a href="/industries/cpg.html">CPG</a>
+                    <a href="/industries/wellness-longevity.html">Wellness & Longevity</a>
+                    <a href="/industries/raising-capital.html">Raising Capital</a>
+                </div>
+            </div>
+            <a href="/about.html">About</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+        <div class="mobile-menu-cta">
+            <button type="button" onclick="openCalendly(event)" class="btn btn-primary btn-large">Book a Call</button>
+        </div>
+    </div>
+
+    <main>
+        <section class="services-hero">
+            <div class="container">
+                <h1>{{ hero.headline }} <span class="highlight">{{ hero.headlineHighlight }}</span></h1>
+                <p class="services-subhead">{{ hero.subhead }}</p>
+            </div>
+        </section>
+
+        <section class="services-grid-section">
+            <div class="container">
+                <h2>{{ servicesHeading }}</h2>
+                <div class="services-cards">
+                    {% for service in services %}
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            {% if loop.index == 1 %}
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 20h9"></path>
+                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                            </svg>
+                            {% else %}
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            {% endif %}
+                        </div>
+                        <h3>{{ service.title }}</h3>
+                        <p>{{ service.description }}</p>
+                        <a href="{{ service.link }}" class="service-card-link">Learn More <span>→</span></a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <section class="how-we-work-section">
+            <div class="container">
+                <h2 class="section-title-center">{{ process.heading }}</h2>
+                <div class="process-timeline">
+                    <div class="timeline-line"></div>
+                    {% for step in process.steps %}
+                    <div class="process-step process-step-{{ step.position }}">
+                        {% if step.position == 'left' %}
+                        <div class="process-step-content scroll-reveal reveal-left">
+                            <span class="process-number">{{ step.number }}</span>
+                            <h3>{{ step.title }}</h3>
+                            <p>{{ step.description }}</p>
+                        </div>
+                        <div class="process-step-dot"></div>
+                        {% else %}
+                        <div class="process-step-dot"></div>
+                        <div class="process-step-content scroll-reveal reveal-right">
+                            <span class="process-number">{{ step.number }}</span>
+                            <h3>{{ step.title }}</h3>
+                            <p>{{ step.description }}</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <section class="case-studies-section">
+            <div class="container">
+                <h2 class="section-title-center">{{ caseStudies.heading }}</h2>
+                <div class="case-studies-grid">
+                    {% for study in caseStudies.items %}
+                    <div class="case-study-card">
+                        <div class="case-study-image"></div>
+                        <div class="case-study-content">
+                            <span class="case-study-tag">{{ study.tag }}</span>
+                            <h3>{{ study.title }}</h3>
+                            <p>{{ study.description }}</p>
+                            <a href="{{ study.link }}" class="case-study-link">Read More <span>→</span></a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>{{ cta.headline }}</h2>
+                <button type="button" onclick="openCalendly(event)" class="btn btn-primary btn-large">{{ cta.buttonText }} <span class="btn-arrow">→</span></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="/index.html" class="logo"><img src="/images/logos/magnate-logo.png" alt="Magnate"></a>
+                <div class="footer-links">
+                    <a href="mailto:ross@magnatesocial.com">ross@magnatesocial.com</a>
+                    <a href="https://www.linkedin.com/in/ross-gardiner-12584098/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+                <p>&copy; 2025 Magnate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openCalendly(e) {
+            if (e) e.preventDefault();
+            if (typeof Calendly !== 'undefined') {
+                Calendly.initPopupWidget({ url: 'https://calendly.com/ross-magnatesocial/onboarding-interview' });
+                return false;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const dropdowns = document.querySelectorAll('.mobile-dropdown');
+
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', () => {
+                    menuToggle.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                    document.body.classList.toggle('menu-open');
+                });
+
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        menuToggle.classList.remove('active');
+                        mobileMenu.classList.remove('active');
+                        document.body.classList.remove('menu-open');
+                    });
+                });
+            }
+
+            dropdowns.forEach(dropdown => {
+                const header = dropdown.querySelector('.mobile-dropdown-header');
+                if (header) {
+                    header.addEventListener('click', () => {
+                        dropdown.classList.toggle('active');
+                    });
+                }
+            });
+
+            const observerOptions = { root: null, rootMargin: '0px 0px -100px 0px', threshold: 0.1 };
+            const revealOnScroll = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        const parentStep = entry.target.closest('.process-step');
+                        if (parentStep) parentStep.classList.add('revealed');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.scroll-reveal').forEach(el => revealOnScroll.observe(el));
+        });
+    </script>
+</body>
+</html>

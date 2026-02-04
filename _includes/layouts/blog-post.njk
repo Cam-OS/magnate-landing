@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ title }} - Magnate Blog">
+    <link rel="icon" type="image/png" href="/images/logos/favicon.png">
+    <title>{{ title }} | Magnate</title>
+    <link rel="stylesheet" href="/styles.css?v=38">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/index.html" class="logo"><img src="/images/logos/magnate-logo.png" alt="Magnate"></a>
+            <div class="nav-links">
+                <div class="nav-dropdown">
+                    <a href="/services.html">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="/services/linkedin-storytelling.html">LinkedIn Storytelling</a>
+                        <a href="/services/company-narrative.html">Company Narrative</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="/industries.html">Industries</a>
+                    <div class="dropdown-menu">
+                        <a href="/industries/tech.html">Tech</a>
+                        <a href="/industries/solo-entrepreneurs.html">Solo Entrepreneurs</a>
+                        <a href="/industries/franchises.html">Franchises</a>
+                        <a href="/industries/cpg.html">CPG</a>
+                        <a href="/industries/wellness-longevity.html">Wellness & Longevity</a>
+                        <a href="/industries/raising-capital.html">Raising Capital</a>
+                    </div>
+                </div>
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-cta">
+                <button type="button" onclick="openCalendly(event)" class="btn btn-primary">Book a Call</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-links">
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-header">Services</div>
+                <div class="mobile-dropdown-content">
+                    <a href="/services.html">All Services</a>
+                    <a href="/services/linkedin-storytelling.html">LinkedIn Storytelling</a>
+                    <a href="/services/company-narrative.html">Company Narrative</a>
+                </div>
+            </div>
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-header">Industries</div>
+                <div class="mobile-dropdown-content">
+                    <a href="/industries.html">All Industries</a>
+                    <a href="/industries/tech.html">Tech</a>
+                    <a href="/industries/solo-entrepreneurs.html">Solo Entrepreneurs</a>
+                    <a href="/industries/franchises.html">Franchises</a>
+                    <a href="/industries/cpg.html">CPG</a>
+                    <a href="/industries/wellness-longevity.html">Wellness & Longevity</a>
+                    <a href="/industries/raising-capital.html">Raising Capital</a>
+                </div>
+            </div>
+            <a href="/about.html">About</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+        <div class="mobile-menu-cta">
+            <button type="button" onclick="openCalendly(event)" class="btn btn-primary btn-large">Book a Call</button>
+        </div>
+    </div>
+
+    <main>
+        <!-- ARTICLE HERO -->
+        <section class="article-hero">
+            <div class="container">
+                <div class="article-hero-content">
+                    <div class="article-meta">
+                        <span class="article-category">{{ category }}</span>
+                        <span class="meta-separator">•</span>
+                        <span class="article-date">{{ date | formatDate }}</span>
+                    </div>
+                    <h1>{{ title }}</h1>
+                    <p class="article-intro">{{ intro }}</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED IMAGE -->
+        <section class="article-featured-image">
+            <div class="container">
+                <img src="{{ featured_image }}" alt="{{ featured_image_alt }}">
+            </div>
+        </section>
+
+        <!-- ARTICLE BODY -->
+        <article class="article-body">
+            <div class="container">
+                <div class="article-content">
+                    {{ content | safe }}
+                </div>
+            </div>
+        </article>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to build your LinkedIn presence?</h2>
+                <button type="button" onclick="openCalendly(event)" class="btn btn-primary btn-large">Book a Free Meeting <span class="btn-arrow">→</span></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="/index.html" class="logo"><img src="/images/logos/magnate-logo.png" alt="Magnate"></a>
+                <div class="footer-links">
+                    <a href="mailto:ross@magnatesocial.com">ross@magnatesocial.com</a>
+                    <a href="https://www.linkedin.com/in/ross-gardiner-12584098/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+                <p>&copy; 2025 Magnate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openCalendly(e) {
+            if (e) e.preventDefault();
+            if (typeof Calendly !== 'undefined') {
+                Calendly.initPopupWidget({
+                    url: 'https://calendly.com/ross-magnatesocial/onboarding-interview'
+                });
+                return false;
+            }
+        }
+
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const dropdowns = document.querySelectorAll('.mobile-dropdown');
+
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', () => {
+                    menuToggle.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                    document.body.classList.toggle('menu-open');
+                });
+
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        menuToggle.classList.remove('active');
+                        mobileMenu.classList.remove('active');
+                        document.body.classList.remove('menu-open');
+                    });
+                });
+            }
+
+            dropdowns.forEach(dropdown => {
+                const header = dropdown.querySelector('.mobile-dropdown-header');
+                if (header) {
+                    header.addEventListener('click', () => {
+                        dropdown.classList.toggle('active');
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

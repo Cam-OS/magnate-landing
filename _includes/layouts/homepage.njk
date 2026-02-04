@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ metaDescription }}">
+    <link rel="icon" type="image/png" href="/images/logos/favicon.png">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/styles.css?v=102">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-sticky">
+        <div class="container nav-container">
+            <a href="/index.html" class="logo"><img src="/images/logos/magnate-logo.png" alt="Magnate"></a>
+            <div class="nav-links">
+                <div class="nav-dropdown">
+                    <a href="/services.html">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="/services/linkedin-storytelling.html">LinkedIn Storytelling</a>
+                        <a href="/services/company-narrative.html">Company Narrative</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="/industries.html">Industries</a>
+                    <div class="dropdown-menu">
+                        <a href="/industries/tech.html">Tech</a>
+                        <a href="/industries/solo-entrepreneurs.html">Solo Entrepreneurs</a>
+                        <a href="/industries/franchises.html">Franchises</a>
+                        <a href="/industries/cpg.html">CPG</a>
+                        <a href="/industries/wellness-longevity.html">Wellness & Longevity</a>
+                        <a href="/industries/raising-capital.html">Raising Capital</a>
+                    </div>
+                </div>
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-cta">
+                <button type="button" onclick="openCalendly(event)" class="btn btn-primary">Book a Call</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-links">
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-header">Services</div>
+                <div class="mobile-dropdown-content">
+                    <a href="/services.html">All Services</a>
+                    <a href="/services/linkedin-storytelling.html">LinkedIn Storytelling</a>
+                    <a href="/services/company-narrative.html">Company Narrative</a>
+                </div>
+            </div>
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-header">Industries</div>
+                <div class="mobile-dropdown-content">
+                    <a href="/industries.html">All Industries</a>
+                    <a href="/industries/tech.html">Tech</a>
+                    <a href="/industries/solo-entrepreneurs.html">Solo Entrepreneurs</a>
+                    <a href="/industries/franchises.html">Franchises</a>
+                    <a href="/industries/cpg.html">CPG</a>
+                    <a href="/industries/wellness-longevity.html">Wellness & Longevity</a>
+                    <a href="/industries/raising-capital.html">Raising Capital</a>
+                </div>
+            </div>
+            <a href="/about.html">About</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+        <div class="mobile-menu-cta">
+            <button type="button" onclick="openCalendly(event)" class="btn btn-primary btn-large">Book a Call</button>
+        </div>
+    </div>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="fade-up">{{ hero.headline }} <span class="highlight">{{ hero.headlineHighlight1 }}</span><br>{{ hero.headlineMiddle }} <span class="highlight">{{ hero.headlineHighlight2 }}</span> {{ hero.headlineEnd }}</h1>
+                    <p class="subhead fade-up fade-up-delay-1">{{ hero.subhead }}</p>
+                    <div class="cta-group fade-up fade-up-delay-2">
+                        <button type="button" onclick="openCalendly(event)" class="btn btn-primary btn-large">{{ hero.primaryCta }} <span class="btn-arrow">&rarr;</span></button>
+                        <a href="/services.html" class="btn btn-secondary btn-large">{{ hero.secondaryCta }}</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS ROW -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-row fade-up">
+                    {% for stat in stats %}
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            {% if loop.index == 1 %}
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+                            </svg>
+                            {% elif loop.index == 2 %}
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                            </svg>
+                            {% elif loop.index == 3 %}
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/>
+                            </svg>
+                            {% else %}
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            {% endif %}
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">{{ stat.number }}</span>
+                            <span class="stat-label">{{ stat.label }}</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- CLIENT LOGOS MARQUEE -->
+        <section class="clients">
+            <div class="container">
+                <h3 class="clients-heading fade-up">{{ clientsHeading }}</h3>
+            </div>
+            <div class="logo-slider">
+                <div class="logo-track">
+                    <img src="/images/logos/picklr-logo.svg" alt="Picklr" class="client-logo logo-picklr">
+                    <img src="/images/logos/embarc.png" alt="Embarc" class="client-logo logo-embarc">
+                    <img src="/images/logos/record-logo.png" alt="Record" class="client-logo logo-record">
+                    <img src="/images/logos/nexgen-logo.png" alt="NexGen" class="client-logo logo-nexgen">
+                    <img src="/images/logos/picklr-logo.svg" alt="Picklr" class="client-logo logo-picklr">
+                    <img src="/images/logos/embarc.png" alt="Embarc" class="client-logo logo-embarc">
+                    <img src="/images/logos/record-logo.png" alt="Record" class="client-logo logo-record">
+                    <img src="/images/logos/nexgen-logo.png" alt="NexGen" class="client-logo logo-nexgen">
+                    <img src="/images/logos/picklr-logo.svg" alt="Picklr" class="client-logo logo-picklr">
+                    <img src="/images/logos/embarc.png" alt="Embarc" class="client-logo logo-embarc">
+                    <img src="/images/logos/record-logo.png" alt="Record" class="client-logo logo-record">
+                    <img src="/images/logos/nexgen-logo.png" alt="NexGen" class="client-logo logo-nexgen">
+                </div>
+            </div>
+        </section>
+
+        <!-- VALUE PROPS -->
+        <section id="value-props" class="value-props">
+            <div class="container">
+                <div class="value-props-grid">
+                    <div class="value-props-content">
+                        <span class="section-tag fade-up">{{ valueProps.tag }}</span>
+                        <h2 class="fade-up fade-up-delay-1">{{ valueProps.heading }}</h2>
+                        <p class="value-intro fade-up fade-up-delay-2">{{ valueProps.intro }}</p>
+
+                        <div class="features-list fade-up fade-up-delay-2">
+                            <h4>{{ valueProps.featuresHeading }}</h4>
+                            <ul>
+                                {% for feature in valueProps.features %}
+                                <li><span class="check-icon">✓</span> {{ feature }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                        <a href="/services.html" class="btn btn-primary btn-large fade-up fade-up-delay-3">{{ valueProps.cta }} <span class="btn-arrow">&rarr;</span></a>
+                    </div>
+                    <div class="value-props-stats">
+                        {% for stat in valueProps.impactStats %}
+                        <div class="impact-card fade-up{% if loop.index > 1 %} fade-up-delay-{{ loop.index - 1 }}{% endif %}">
+                            <span class="impact-number">{{ stat.number }}</span>
+                            <span class="impact-label">{{ stat.label }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIFFERENTIATOR -->
+        <section class="differentiator">
+            <div class="container">
+                <div class="differentiator-grid">
+                    <div class="differentiator-image fade-up">
+                        <img src="/images/photos/ross-secondary.jpeg" alt="Ross Gardiner, Founder of Magnate">
+                    </div>
+                    <div class="differentiator-content">
+                        <span class="section-tag fade-up">{{ differentiator.tag }}</span>
+                        <h2 class="fade-up fade-up-delay-1">{{ differentiator.heading }} <span class="highlight">{{ differentiator.headlineHighlight }}</span> {{ differentiator.headlineEnd }}</h2>
+                        {% for paragraph in differentiator.paragraphs %}
+                        <p class="fade-up fade-up-delay-2">{{ paragraph }}</p>
+                        {% endfor %}
+                        <a href="/about.html" class="btn btn-primary btn-large fade-up fade-up-delay-3">{{ differentiator.cta }} <span class="btn-arrow">&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="testimonials-header fade-up">
+                    <span class="section-tag">{{ testimonials.tag }}</span>
+                    <h2 class="testimonials-heading">{{ testimonials.heading }}</h2>
+                </div>
+                <div class="testimonials-grid">
+                    {% for testimonial in testimonials.items %}
+                    <div class="testimonial-card fade-up{% if loop.index > 1 %} fade-up-delay-{{ loop.index - 1 }}{% endif %}">
+                        <div class="testimonial-stars">
+                            <svg class="star" viewBox="0 0 24 24"><polygon fill="currentColor" points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                            <svg class="star" viewBox="0 0 24 24"><polygon fill="currentColor" points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                            <svg class="star" viewBox="0 0 24 24"><polygon fill="currentColor" points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                            <svg class="star" viewBox="0 0 24 24"><polygon fill="currentColor" points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                            <svg class="star{% if testimonial.rating == '4.9' %} half{% endif %}" viewBox="0 0 24 24"><polygon fill="currentColor" points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                            <span class="rating-number">{{ testimonial.rating }}</span>
+                        </div>
+                        <blockquote>
+                            "{{ testimonial.quote | safe }}"
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <span class="author-title">{{ testimonial.authorTitle }}</span>
+                                <span class="author-company">{{ testimonial.authorCompany }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="fade-up">{{ cta.heading }}<br><span class="highlight">{{ cta.headingHighlight }}</span></h2>
+                    <p class="fade-up fade-up-delay-1">{{ cta.subtext }}</p>
+                    <button type="button" onclick="openCalendly(event)" class="btn btn-primary btn-large fade-up fade-up-delay-2">{{ cta.buttonText }} <span class="btn-arrow">&rarr;</span></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="/index.html" class="logo"><img src="/images/logos/magnate-logo.png" alt="Magnate"></a>
+                <div class="footer-links">
+                    <a href="mailto:ross@magnatesocial.com">ross@magnatesocial.com</a>
+                    <a href="https://www.linkedin.com/in/ross-gardiner-12584098/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+                <p>&copy; 2025 Magnate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openCalendly(e) {
+            if (e) e.preventDefault();
+            if (typeof Calendly !== 'undefined') {
+                Calendly.initPopupWidget({
+                    url: 'https://calendly.com/ross-magnatesocial/onboarding-interview'
+                });
+                return false;
+            }
+        }
+
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const dropdowns = document.querySelectorAll('.mobile-dropdown');
+
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', () => {
+                    menuToggle.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                    document.body.classList.toggle('menu-open');
+                });
+
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        menuToggle.classList.remove('active');
+                        mobileMenu.classList.remove('active');
+                        document.body.classList.remove('menu-open');
+                    });
+                });
+            }
+
+            dropdowns.forEach(dropdown => {
+                const header = dropdown.querySelector('.mobile-dropdown-header');
+                if (header) {
+                    header.addEventListener('click', () => {
+                        dropdown.classList.toggle('active');
+                    });
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.add('js-loaded');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -40px 0px'
+            });
+
+            document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+        });
+
+        // Netlify Identity redirect
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
