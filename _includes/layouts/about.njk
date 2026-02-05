@@ -6,7 +6,7 @@
     <meta name="description" content="{{ metaDescription }}">
     <link rel="icon" type="image/png" href="/images/logos/favicon.png">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="/styles.css?v=106">
+    <link rel="stylesheet" href="/styles.css?v=107">
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 </head>
@@ -34,7 +34,6 @@
                     </div>
                 </div>
                 <a href="/about.html">About</a>
-                <a href="/blog.html">Blog</a>
                 <a href="/contact.html">Contact</a>
             </div>
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
@@ -71,7 +70,6 @@
                 </div>
             </div>
             <a href="/about.html">About</a>
-            <a href="/blog.html">Blog</a>
             <a href="/contact.html">Contact</a>
         </div>
         <div class="mobile-menu-cta">
@@ -82,18 +80,13 @@
     <main>
         <section class="about-hero-section">
             <div class="container">
-                <div class="about-hero-grid">
-                    <div class="about-hero-image">
-                        <div class="image-placeholder"><span>Image</span></div>
-                    </div>
-                    <div class="about-hero-content">
-                        <span class="section-tag">{{ heroSection.tag }}</span>
-                        <h1>{{ heroSection.headline }} <span class="highlight">{{ heroSection.headlineHighlight }}</span> {{ heroSection.headlineEnd }}</h1>
-                        {% for paragraph in heroSection.paragraphs %}
-                        <p>{{ paragraph }}</p>
-                        {% endfor %}
-                        <p class="hero-emphasis">{{ heroSection.emphasis }}</p>
-                    </div>
+                <div class="about-hero-content">
+                    <span class="section-tag">{{ heroSection.tag }}</span>
+                    <h1>{{ heroSection.headline }} <span class="highlight">{{ heroSection.headlineHighlight }}</span> {{ heroSection.headlineEnd }}</h1>
+                    {% for paragraph in heroSection.paragraphs %}
+                    <p>{{ paragraph }}</p>
+                    {% endfor %}
+                    <p class="hero-emphasis">{{ heroSection.emphasis }}</p>
                 </div>
             </div>
         </section>
