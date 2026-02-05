@@ -7,15 +7,15 @@ metaDescription: LinkedIn and narrative strategy for franchise brands. Attract q
 
 hero:
   tag: Franchises
-  headline: "Attract the Right Operators."
-  headlineHighlight: "Build a Franchise That Lasts."
-  subtext: "For franchise brands seeking quality franchisees through founder-led thought leadership storytelling and strategic LinkedIn content."
+  headline: "Attract the right operators."
+  headlineHighlight: "Build the industry-leading franchise."
+  subtext: "For franchise brands seeking elite franchisees through founder-led thought leadership content."
 
 whoThisIsFor:
   heading: "Who This Is For"
   items:
     - "Franchise brands seeking operators with experience and resources"
-    - "Executive teams, seasoned entrepreneurs, and PE-backed groups"
+    - "Executive teams, seasoned entrepreneurs, and private equity groups"
     - "Companies wanting content to align with sales and outreach strategies"
 
 whatWeSolve:
@@ -49,15 +49,15 @@ whiteGloveService:
         - "Turn insights from outreach into refined content that resonates"
 
 whyChooseUs:
-  heading: "Why Franchises Choose Magnate"
+  heading: "Why Franchises Choose MAGNATE"
   items:
-    - "LinkedIn as a dynamic resume: qualify leads before your sales team spends time"
+    - "LinkedIn helps you qualify leads before your sales team spends time"
     - "White-glove content tailored to high-value operators"
     - "Strategy that aligns with PE groups and franchise growth goals"
-    - "Proven results: Became #1 source of leads for the U.S.'s 43rd fastest growing company"
-    - "Avoid AI slop and content factories — we deliver credibility, not just posts"
+    - "Proven results with The Picklr and more"
+    - "No AI slop or content factories — we deliver credibility, not just posts"
 
 cta:
-  headline: "Your franchise deserves operators who match your vision."
-  subtext: "We help you attract them."
+  headline: "Your franchise needs operators who get your vision."
+  subtext: "We help you find and attract them."
 ---

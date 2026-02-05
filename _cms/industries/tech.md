@@ -7,31 +7,37 @@ metaDescription: LinkedIn and narrative strategy for fast-growing tech companies
 
 hero:
   tag: Tech
-  headline: "Your Product Moves Fast."
-  headlineHighlight: "Your Story Must Move Faster."
-  subtext: "For fast-growing tech companies that need a founder-led narrative built with precision, speed, and white-glove judgment."
+  headline: "Your industry changes quickly."
+  headlineHighlight: "You need a story that lasts."
+  subtext: "Fast-growing tech companies need a founder-led narrative built with precision, speed, and white-glove judgment."
 
 whoThisIsFor:
-  heading: "Who This Is For"
-  content: "Tech companies who have recently raised $5-25M and need a narrative tight enough for investors and clear enough for customers — before the spotlight hits."
+  heading: "Who We Help"
+  content: "Tech companies who have recently raised $5-25M and need a narrative tight enough to close their next round and position them ahead of the competition."
+  items:
+    - "B2B AI & SaaS"
+    - "FinTech"
+    - "MarTech"
+    - "Defense tech"
+    - "Health tech"
 
 whatWeSolve:
   heading: "What We Solve"
   intro: "You need a story that can:"
   items:
     - "Signal why you'll survive the shakeout"
-    - "Sell a future that doesn't exist yet"
+    - "Sell a bold future that doesn't exist yet"
     - "Make pivots look like strategic evolution, not failure"
     - "Align your CEO, CTO, CRO, and CMO under one message"
   emphasis: "Founder-led storytelling isn't optional anymore. We make sure you do it well."
 
 whiteGloveService:
-  heading: "Our White-Glove Tech Service"
+  heading: "What We Provide"
   tabs:
     - id: narrative
       label: "Narrative Architecture"
       title: "Narrative Architecture"
-      lead: "A proprietary messaging deck built for founders with runway:"
+      lead: "A proprietary deep messaging deck built for founding teams:"
       items:
         - "Vision & worldview"
         - "Core narrative & positioning"
@@ -40,41 +46,41 @@ whiteGloveService:
     - id: content
       label: "Founder Content Engine"
       title: "Founder Content Engine"
-      lead: "Weekly posts, essays, and long-form pieces written in your exact tone — zero AI slop, zero junior-writer vibes."
+      lead: "We bring the narrative to life where your customers are:"
       items:
-        - "LinkedIn posts that build authority"
-        - "Long-form essays for depth"
-        - "Industry commentary and hot takes"
-        - "Newsletter support"
+        - "Weekly posts"
+        - "Long-form essays"
+        - "Short-form video"
+        - "SEO/GEO blog and editorial"
     - id: pivot
       label: "Pivot & Repositioning"
       title: "Pivot & Market Repositioning"
       lead: "Crafted messaging that frames your strategic shift as foresight, not retreat."
       items:
-        - "Reframe the narrative around market evolution"
-        - "Align internal and external messaging"
-        - "Prepare leadership for tough questions"
-        - "Control the story before others write it"
+        - "Articulating messaging shift"
+        - "Stress testing position"
+        - "Subtle alignment of positioning"
+        - "Dialed in talking points"
     - id: alignment
       label: "Executive Alignment"
       title: "Executive Branding Alignment"
       lead: "We translate the founder narrative down through the leadership team so the whole company sounds unified."
       items:
-        - "CEO, CTO, CRO, CMO all on message"
-        - "Consistent voice across all channels"
-        - "Internal narrative training"
-        - "Messaging playbooks for each role"
+        - "Advising on sales collateral"
+        - "Reshaping marketing language"
+        - "Supporting key C-suite on social"
+        - "Your voice, codified"
 
 whyChooseUs:
-  heading: "Why Tech Startups Choose Magnate"
+  heading: "Why Tech Startups Choose Us"
   items:
     - "Editorial judgment from a former business journalist"
-    - "Business clarity from someone who's an exited founder"
+    - "Business clarity from exited founders"
     - "Content that builds authority — not vanity metrics"
-    - "Reputation management that scales with your company, not just your posting schedule"
-  closing: "Your competitors are publishing ChatGPT garbage. You're publishing authentic insights."
+    - "Reputation management that scales with your company"
+  closing: ""
 
 cta:
-  headline: "The tech shakeout is coming."
-  subtext: "Your narrative is your moat."
+  headline: "A big shakeout is coming. Your next round will be much harder to close."
+  subtext: "Your narrative is your sword and shield."
 ---

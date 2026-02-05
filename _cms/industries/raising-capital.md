@@ -7,9 +7,9 @@ metaDescription: LinkedIn and narrative strategy for founders raising capital. C
 
 hero:
   tag: Raising Capital
-  headline: "Investors Invest in People,"
-  headlineHighlight: "Not Just Products."
-  subtext: "For founders and funds looking to raise capital, we help you communicate trust, vision, and authority — before you even walk into the room."
+  headline: "Investors invest in people,"
+  headlineHighlight: "not just products."
+  subtext: "We help founders and funds communicate trust, vision, and authority before you walk into the room."
 
 whoThisIsFor:
   heading: "Who This Is For"
@@ -22,15 +22,15 @@ whatWeSolve:
   heading: "What We Solve"
   intro: "Your fundraising story needs to:"
   items:
-    - "Communicate that you are competent, credible, and visionary"
+    - "Communicate that you are a competent, credible visionary"
     - "Showcase personality and judgment to build trust"
-    - "Position pivots as strength, not indecision"
+    - "Position pivots as power moves, not missteps"
     - "Amplify your experience and track record"
     - "Make investors want to meet you before the cold pitch"
-  emphasis: "Content becomes the pre-meeting handshake, creating first impressions you can't buy."
+  emphasis: ""
 
 whiteGloveService:
-  heading: "Our White-Glove Fundraising Service"
+  heading: "Our White-Glove Fundraising Content Strategy"
   tabs:
     - id: content
       label: "Content Engine & Outreach"
@@ -43,22 +43,22 @@ whiteGloveService:
     - id: pitch
       label: "Pitch Refinement"
       title: "Pitch Refinement & Narrative Development"
-      lead: "Content creation naturally hones your pitch:"
+      lead: "Content so sharp it naturally hones your pitch:"
       items:
         - "Lean, digestible explanations for any opportunity"
         - "Aligns messaging with investor expectations"
         - "Ensures your story is clear in 30 seconds or less"
 
 whyChooseUs:
-  heading: "Why Fundraising Leaders Choose Magnate"
+  heading: "Why Founders Raising Money Choose MAGNATE"
   items:
-    - "Messaging that builds trust before you walk in the room"
+    - "We have raised money as founders"
     - "Content + outreach = sharp end of the fundraising spear"
     - "Editorial judgment from a former journalist with decades of experience"
-    - "Strategy that scales with your fundraising journey, not just your posting schedule"
-    - "Avoid AI slop and content factories — we deliver credibility, not vanity metrics"
+    - "Track record helping startups and $100M commercial real estate fund"
+    - "No AI slop and content factories — we deliver credibility, not vanity metrics"
 
 cta:
-  headline: "Your narrative is the first capital you raise."
+  headline: "Your narrative drives your fundraising strategy."
   subtext: "Make it count."
 ---

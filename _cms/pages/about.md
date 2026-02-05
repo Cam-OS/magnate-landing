@@ -6,32 +6,31 @@ metaDescription: "Learn about Magnate and Ross Gardiner, the narrative strategis
 
 heroSection:
   tag: "About Magnate"
-  headline: "Our Storytelling Journey Started Before"
-  headlineHighlight: "\"Personal Branding\""
-  headlineEnd: "Was a Thing"
+  headline: "Journalists-turned-founders telling stories for a"
+  headlineHighlight: "new era"
+  headlineEnd: ""
   paragraphs:
-    - "In 2014, I was a journalist watching something unfold that now seems obvious: brands on social were reaching more people than the publications I was writing for."
-    - "Meanwhile, those same brands were spending tens of thousands to get publicists to convince journalists to tell their story… badly. They could've told it themselves: faster, cheaper, and far more effectively."
-    - "So I built an agency that helped music festivals like Tomorrowland and brands like Red Bull do exactly that."
-    - "Nine years later, Magnate is the second iteration of the same insight:"
-  emphasis: "You don't need media gatekeepers. You can tell your own story, better than they ever could."
+    - "MAGNATE was founded in 2023 to help business leaders tell their story and find customers in a new era of media."
+    - "Gone were the trade publications and traditional media with their gatekeepers. In their place emerged platforms like LinkedIn, Substack, YouTube and millions of podcasts, all democratizing access to engaged audiences for business owners."
+    - "Today, as competition for audience mindshare heats up, telling great stories passionately and authentically has never mattered more."
+  emphasis: ""
 
 bothSides:
-  headline: "I've Been on"
+  headline: "We've Been on"
   headlineHighlight: "Both Sides"
   headlineEnd: "of Business Storytelling"
   journalism:
     label: "Journalism"
     title: "Editorial Standards & Story Psychology"
-    content: "Journalism taught me editorial standards, story psychology, emotional pacing, and what should never go public."
-    highlight: "If you say something in an interview that would blow up your reputation, I'll catch it before it ever leaves the doc."
+    content: "Journalism taught Ross editorial standards, story psychology, emotional pacing, and what should never go public."
+    highlight: "If you say something in an interview that would blow up your reputation, we catch it before it ever leaves the doc."
   entrepreneurship:
     label: "Entrepreneurship"
     title: "Profit, Perception & ROI"
-    content: "Entrepreneurship taught me what founders actually care about: profit, perception, fear, credibility, and ROI."
-    highlight: "I speak to business owners as a peer — not as a marketer trying to justify a retainer."
+    content: "Entrepreneurship taught us what founders actually care about: profit, perception, fear, credibility, and ROI."
+    highlight: "We speak to business owners as peers — not as a marketer trying to justify a retainer."
   conclusion: "This combination is rare."
-  conclusionText: "Most \"content people\" understand algorithms. Very few understand entrepreneurial humans."
+  conclusionText: "Most \"content people\" understand algorithms. Very few understand entrepreneurs."
 
 competition:
   tag: "The Difference"
@@ -47,12 +46,12 @@ competition:
 whatWeDo:
   tag: "What We Do"
   headline: "What We Actually Do (and Why It Works)"
-  intro: "Our work lives in two lanes:"
+  intro: "Our approach has two phases."
   narrativeDevelopment:
     number: "01"
-    timing: "Month One"
+    timing: "Phase One"
     title: "Narrative Development"
-    description: "Deep strategic work to build your foundation:"
+    description: "We begin with the story:"
     items:
       - "Industry-level research"
       - "Your origin story"
@@ -63,33 +62,32 @@ whatWeDo:
       - "Positioning that sticks"
   narrativeExecution:
     number: "02"
-    timing: "Ongoing"
+    timing: "Phase Two"
     title: "Narrative Execution"
-    description: "Once we understand the story, we deploy it everywhere it matters:"
+    description: "Then we deploy where it matters:"
     items:
       - "LinkedIn content"
       - "Newsletters"
       - "Substacks"
       - "Keynotes"
       - "Press releases"
-      - "Landing pages"
       - "Pitch deck rewrites"
       - "Sales enablement messaging"
-  conclusion: "Consultancies hand you a glossy voice deck that collects dust. Content agencies fire off AI-written posts with no strategic spine."
-  conclusionBold: "Magnate does both — well."
+  conclusion: ""
+  conclusionBold: ""
 
 philosophy:
   tag: "Our Philosophy"
   headline: "The Philosophy Behind Our Content Engine"
   cards:
     - title: "Message Over Medium"
-      content: "LinkedIn is just today's channel. Tomorrow, it'll be something else. The fundamentals of storytelling never change."
+      content: "The fundamentals of storytelling never change. We specialize in LinkedIn and Substack today. But we are always looking for the next big platform."
     - title: "Quality Over Virality"
-      content: "We don't chase dopamine spikes. We chase revenue, credibility, and authority. BuzzFeed chose viral. The New York Times chose quality. Which would you rather be today?"
-    - title: "For the Reluctant Thought Leaders"
-      content: "Our clients aren't trying to be influencers. They don't want fame. They want results — and respect."
+      content: "We don't chase likes, comments and shares spikes. We chase revenue, credibility, and authority."
+    - title: "For Reluctant Thought Leaders"
+      content: "Our clients don't want to be influencers. They want results and respect, not an audience of bots."
     - title: "Anti-AI Slop"
-      content: "ChatGPT-first writers are flooding feeds with lazy, soulless content. Your customers notice. Your competitors notice. Your peers notice. We don't do slop. We write in your voice, not a machine's."
+      content: "ChatGPT-first writers are flooding feeds with lazy, soulless content. Your customers notice. We write extremely high quality content in YOUR voice."
 
 outcomes:
   tag: "Results"
@@ -98,19 +96,21 @@ outcomes:
   items:
     - "Turned LinkedIn into the #1 lead driver for America's 43rd fastest-growing company"
     - "Booked 20 meetings worth $5M in pipeline for a founder — at one conference"
-    - "Helped consultants out-earn their former CMO salaries"
+    - "Helped consultants out-earn their former C-suite salaries"
     - "Built authoritative voices that increased deal velocity, close rate, and inbound demand"
   conclusion: "Content is the product."
-  conclusionBold: "Pipeline is the point."
+  conclusionBold: "Pipeline is the result."
 
 ross:
   tag: "Meet the Founder"
-  headline: "Ross Gardiner, Founder & CEO of Magnate"
+  headline: "About our founder"
+  photo: "/images/photos/ross-gardiner.png"
   paragraphs:
-    - "I'm Ross, founder of Magnate. I've spent the past 15 years in journalism, media strategy, and narrative design for founders and growth-stage companies. Along the way I've built three companies, and sold one."
-    - "My work sits at the intersection of story and revenue: narratives that make people feel something, and positioning that moves them toward a sale."
-    - "I built Magnate to help serious founders communicate at the level their business deserves."
-  closing: "If that's you — we should talk."
+    - "MAGNATE was founded by Ross Gardiner, a serial entrepreneur, business journalist, and brand developer."
+    - "He has spent over a decade working with founders and growth-stage companies, and along the way built three businesses, and sold one to a public company. He currently advises four startups across a several industries."
+    - "His current and former clients include Red Bull, Live Nation and the City of Los Angeles, and has helped them organic PR placements in the New York Times, Los Angeles Times, Vogue and more."
+    - "Ross built MAGNATE because he saw that traditional PR for businesses had become completely ineffectual, and that founder-led content on platforms like LinkedIn, Substack and on-site would dominate the new era."
+  closing: ""
   ctaText: "Book a Conversation"
 
 cta:
