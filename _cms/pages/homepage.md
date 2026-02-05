@@ -20,11 +20,11 @@ stats:
   - number: "$22M+"
     label: "Pipeline Influenced"
   - number: "98%"
-    label: "Long-Term Client Retention"
+    label: "Client Retention"
   - number: "#1"
-    label: "Founder-Focused Narrative Partner"
-  - number: "5.0"
-    label: "Based on dozens of private client reviews & referrals"
+    label: "Founder-Led Partner"
+  - number: "5.0 ★"
+    label: "Client Rating"
 
 clientsHeading: "Clients We've Worked With"
 

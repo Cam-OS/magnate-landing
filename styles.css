@@ -570,9 +570,6 @@ h3 {
     font-weight: 500;
     line-height: 1.4;
     margin-top: auto;
-    min-height: 2.24em; /* Ensures space for 2 lines (1.4 line-height × 2) */
-    display: flex;
-    align-items: flex-end;
 }
 
 /* About Section */
