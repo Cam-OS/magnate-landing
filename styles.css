@@ -1231,44 +1231,14 @@ h3 {
    ABOUT PAGE STYLES
    ========================================== */
 
-/* HERO SECTION — Image left, text right */
+/* HERO SECTION — Left-aligned text */
 .about-hero-section {
     padding: 160px 0 80px;
 }
 
-.about-hero-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 60px;
-    align-items: center;
-}
-
-.about-hero-image {
-    position: relative;
-}
-
-.about-hero-image .image-placeholder {
-    aspect-ratio: 4/5;
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    color: var(--text-secondary);
-    font-weight: 600;
-}
-
-.about-hero-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
-    object-fit: cover;
-}
-
 .about-hero-content {
     text-align: left;
+    max-width: 720px;
 }
 
 .about-hero-content .section-tag {
@@ -2028,18 +1998,8 @@ h3 {
         padding: 140px 0 60px;
     }
 
-    .about-hero-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .about-hero-image {
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
     .about-hero-content {
-        text-align: center;
+        text-align: left;
     }
 
     .about-hero-content h1 {
