@@ -1,6 +1,6 @@
 ---
 layout: layouts/homepage.njk
-permalink: /index.html
+permalink: /full/index.html
 title: "Magnate | B2B Narrative & Content Consultancy"
 metaDescription: "Magnate helps B2B founders craft narratives that close deals. Thought leadership, LinkedIn content, and GTM storytelling for serious founders."
 
