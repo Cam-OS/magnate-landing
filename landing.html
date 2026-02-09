@@ -1,0 +1,521 @@
+---
+permalink: /index.html
+title: "Magnate | B2B Narrative & Content Consultancy"
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MAGNATE helps B2B founding teams develop their GTM story and bring it to life with best-in-class content.">
+    <link rel="icon" type="image/png" href="/images/logos/favicon.png">
+    <title>{{ title }}</title>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+    <style>
+        @font-face {
+            font-family: 'Moon Get';
+            src: url('fonts/moon_get-Heavy.woff2') format('woff2'),
+                 url('fonts/moon_get-Heavy.ttf') format('truetype');
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Inter Tight';
+            src: url('fonts/static/InterTight-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Inter Tight';
+            src: url('fonts/static/InterTight-SemiBold.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Inter Tight';
+            src: url('fonts/static/InterTight-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Inter Tight';
+            src: url('fonts/static/InterTight-ExtraBold.ttf') format('truetype');
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #FFC629;
+            --bg-dark: #0D0D0F;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B8B8C0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 500;
+            color: var(--text-primary);
+            line-height: 1.5;
+            min-height: 100vh;
+            background-color: var(--bg-dark);
+            background-image: url('images/backgrounds/background-tone.png');
+            background-position: center top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            body {
+                background-attachment: scroll;
+            }
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* NAV */
+        .landing-nav {
+            padding: 28px 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        .landing-nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .landing-nav .logo {
+            font-family: 'Moon Get', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--gold);
+            text-decoration: none;
+            letter-spacing: 0.02em;
+        }
+
+        .landing-nav .nav-link {
+            font-family: 'Inter Tight', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .landing-nav .nav-link:hover {
+            color: var(--gold);
+        }
+
+        /* HERO */
+        .landing-hero {
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+
+        .landing-hero h1 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: clamp(2.4rem, 5.5vw, 4rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.08;
+            margin-bottom: 28px;
+        }
+
+        .landing-hero h1 .gold {
+            color: var(--gold);
+        }
+
+        .landing-hero .subhead {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 36px;
+            line-height: 1.6;
+        }
+
+        .landing-hero .subhead strong {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        /* BUTTONS */
+        .btn-outline {
+            display: inline-block;
+            padding: 14px 32px;
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            background: transparent;
+            border: 2px solid var(--text-secondary);
+            border-radius: 40px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        .btn-solid {
+            display: inline-block;
+            padding: 14px 32px;
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #0D0D0F;
+            background: var(--text-primary);
+            border: 2px solid var(--text-primary);
+            border-radius: 40px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+
+        .btn-solid:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: #0D0D0F;
+        }
+
+        /* STATS */
+        .landing-stats {
+            padding: 48px 0 40px;
+            text-align: center;
+        }
+
+        .landing-stats .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 64px;
+        }
+
+        .stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .stat-number {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 800;
+            color: var(--gold);
+            letter-spacing: -0.02em;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        /* CLIENT LOGO MARQUEE */
+        .clients {
+            padding: 60px 0;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .clients-heading {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 40px;
+        }
+
+        .logo-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 64px;
+        }
+
+        .client-logo {
+            height: 40px;
+            width: auto;
+            flex-shrink: 0;
+            opacity: 0.6;
+            filter: brightness(0) invert(1);
+            transition: opacity 0.3s;
+        }
+
+        .client-logo:hover {
+            opacity: 1;
+        }
+
+        .logo-embarc {
+            height: 80px;
+        }
+
+        /* ABOUT SECTION */
+        .landing-about {
+            padding: 100px 0;
+        }
+
+        .about-heading {
+            margin-bottom: 56px;
+        }
+
+        .about-heading .section-tag {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        .about-heading h2 {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        .about-heading h2 .gold {
+            color: var(--gold);
+        }
+
+        .about-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+        }
+
+        .about-columns p {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .about-columns p strong {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        .about-columns p.accepting {
+            color: var(--text-primary);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .about-cta {
+            text-align: center;
+            margin-top: 56px;
+        }
+
+        /* FOOTER */
+        .landing-footer {
+            padding: 48px 0;
+            text-align: center;
+        }
+
+        .landing-footer .logo {
+            font-family: 'Moon Get', sans-serif;
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: var(--gold);
+            text-decoration: none;
+            letter-spacing: 0.02em;
+        }
+
+        .landing-footer .footer-links {
+            margin-top: 16px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .landing-footer .footer-links a {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .landing-footer .footer-links a:hover {
+            color: var(--gold);
+        }
+
+        .landing-footer .copyright {
+            margin-top: 16px;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .landing-hero {
+                padding: 60px 0 40px;
+            }
+
+            .landing-stats .stats-row {
+                gap: 32px;
+                flex-wrap: wrap;
+            }
+
+            .about-columns {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .landing-about {
+                padding: 72px 0;
+            }
+
+            .clients {
+                padding: 48px 0;
+            }
+
+            .client-logo {
+                width: 120px;
+                height: 48px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .landing-stats .stats-row {
+                gap: 24px;
+            }
+
+            .stat-number {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="landing-nav">
+        <div class="container">
+            <span class="logo">MAGNATE.</span>
+            <a href="#about" class="nav-link">About.</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="landing-hero">
+        <div class="container">
+            <h1>Building <span class="gold">narratives</span> that<br>sell <span class="gold">big visions.</span></h1>
+            <p class="subhead"><strong>MAGNATE</strong> helps B2B founding teams develop their GTM story and bring it to life with best-in-class content.</p>
+            <button type="button" onclick="openCalendly(event)" class="btn-outline">Free Consultation &rarr;</button>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="landing-stats">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat">
+                    <span class="stat-number">40+</span>
+                    <span class="stat-label">Narratives Shaped</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">$22M+</span>
+                    <span class="stat-label">Pipeline Influenced</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">25M+</span>
+                    <span class="stat-label">LinkedIn Impressions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENT LOGOS -->
+    <section class="clients">
+        <div class="container">
+            <h3 class="clients-heading">Clients We've Worked With</h3>
+            <div class="logo-row">
+                <img src="/images/logos/picklr-logo.svg" alt="Picklr" class="client-logo logo-picklr">
+                <img src="/images/logos/embarc.png" alt="Embarc" class="client-logo logo-embarc">
+                <img src="/images/logos/record-logo.png" alt="Record" class="client-logo logo-record">
+                <img src="/images/logos/nexgen-logo.png" alt="NexGen" class="client-logo logo-nexgen">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="landing-about">
+        <div class="container">
+            <div class="about-heading">
+                <span class="section-tag">About</span>
+                <h2>ABOUT <span class="gold">MAGNATE.</span></h2>
+            </div>
+            <div class="about-columns">
+                <div>
+                    <p><strong>MAGNATE is a narrative and content marketing agency for industry leaders who need to stand out with integrity in a crowded market.</strong></p>
+                    <p>We specialize in developing unique stories and content strategies for B2B companies that drive results: revenue, fundraising, industry notoriety.</p>
+                    <p>We work closely with your team to build a GTM story that is shared across your organization and positions you as the only smart choice in your market.</p>
+                    <p class="accepting">Now accepting clients for narrative & thought leadership strategy.</p>
+                </div>
+                <div>
+                    <p>MAGNATE was founded by a group of business journalists, media strategists and brand developers.</p>
+                    <p>Our CEO Ross spent over a decade working with founders and growth-stage companies, and along the way built three companies, and sold one. Current and former clients include Red Bull, Live Nation and City of Los Angeles.</p>
+                    <p>We built MAGNATE to help good companies cut through the noise and find a strategic edge in the online wilderness.</p>
+                </div>
+            </div>
+            <div class="about-cta">
+                <button type="button" onclick="openCalendly(event)" class="btn-solid">Free Consultation &rarr;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="landing-footer">
+        <div class="container">
+            <a href="/" class="logo">MAGNATE</a>
+            <div class="footer-links">
+                <a href="mailto:ross@magnatesocial.com">ross@magnatesocial.com</a>
+                <a href="https://www.linkedin.com/in/ross-gardiner-12584098/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+            <p class="copyright">&copy; 2025 Magnate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openCalendly(e) {
+            if (e) e.preventDefault();
+            if (typeof Calendly !== 'undefined') {
+                Calendly.initPopupWidget({
+                    url: 'https://calendly.com/ross-magnatesocial/15min'
+                });
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
