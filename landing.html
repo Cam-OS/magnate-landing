@@ -382,8 +382,16 @@ title: "Magnate | B2B Narrative & Content Consultancy"
             }
 
             .landing-stats .stats-row {
-                gap: 32px;
-                flex-wrap: wrap;
+                gap: 24px;
+                flex-wrap: nowrap;
+            }
+
+            .stat-number {
+                font-size: 1.5rem;
+            }
+
+            .stat-label {
+                font-size: 0.75rem;
             }
 
             .about-columns {
@@ -399,19 +407,41 @@ title: "Magnate | B2B Narrative & Content Consultancy"
                 padding: 48px 0;
             }
 
+            .logo-row {
+                justify-content: flex-start;
+                gap: 48px;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+                padding: 0 24px;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+
+            .logo-row::-webkit-scrollbar {
+                display: none;
+            }
+
             .client-logo {
-                width: 120px;
-                height: 48px;
+                height: 36px;
+                width: auto;
+                min-width: 0;
+                object-fit: contain;
+                scroll-snap-align: center;
+            }
+
+            .logo-embarc {
+                height: 72px;
             }
         }
 
         @media (max-width: 480px) {
             .landing-stats .stats-row {
-                gap: 24px;
+                gap: 16px;
             }
 
             .stat-number {
-                font-size: 1.8rem;
+                font-size: 1.3rem;
             }
         }
     </style>
