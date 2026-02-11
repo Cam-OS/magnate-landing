@@ -275,6 +275,11 @@ title: "Magnate | B2B Narrative & Content Consultancy"
             height: 80px;
         }
 
+        /* MARQUEE (hidden on desktop) */
+        .logo-marquee {
+            display: none;
+        }
+
         /* ABOUT SECTION */
         .landing-about {
             padding: 100px 0;
@@ -408,30 +413,38 @@ title: "Magnate | B2B Narrative & Content Consultancy"
             }
 
             .logo-row {
-                justify-content: flex-start;
-                gap: 48px;
-                overflow-x: auto;
-                scroll-snap-type: x mandatory;
-                -webkit-overflow-scrolling: touch;
-                padding: 0 24px;
-                scrollbar-width: none;
-                -ms-overflow-style: none;
-            }
-
-            .logo-row::-webkit-scrollbar {
                 display: none;
             }
 
-            .client-logo {
-                height: 36px;
-                width: auto;
-                min-width: 0;
-                object-fit: contain;
-                scroll-snap-align: center;
+            .logo-marquee {
+                display: block;
+                overflow: hidden;
+                mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+                -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
             }
 
-            .logo-embarc {
-                height: 72px;
+            .marquee-track {
+                display: flex;
+                align-items: center;
+                gap: 48px;
+                width: max-content;
+                animation: marquee 20s linear infinite;
+            }
+
+            .marquee-track .client-logo {
+                height: 32px;
+                width: auto;
+                object-fit: contain;
+                flex-shrink: 0;
+            }
+
+            .marquee-track .logo-embarc {
+                height: 64px;
+            }
+
+            @keyframes marquee {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
             }
         }
 
@@ -494,6 +507,18 @@ title: "Magnate | B2B Narrative & Content Consultancy"
                 <img src="/images/logos/embarc.png" alt="Embarc" class="client-logo logo-embarc">
                 <img src="/images/logos/record-logo.png" alt="Record" class="client-logo logo-record">
                 <img src="/images/logos/nexgen-logo.png" alt="NexGen" class="client-logo logo-nexgen">
+            </div>
+            <div class="logo-marquee">
+                <div class="marquee-track">
+                    <img src="/images/logos/picklr-logo.svg" alt="Picklr" class="client-logo logo-picklr">
+                    <img src="/images/logos/embarc.png" alt="Embarc" class="client-logo logo-embarc">
+                    <img src="/images/logos/record-logo.png" alt="Record" class="client-logo logo-record">
+                    <img src="/images/logos/nexgen-logo.png" alt="NexGen" class="client-logo logo-nexgen">
+                    <img src="/images/logos/picklr-logo.svg" alt="Picklr" class="client-logo logo-picklr">
+                    <img src="/images/logos/embarc.png" alt="Embarc" class="client-logo logo-embarc">
+                    <img src="/images/logos/record-logo.png" alt="Record" class="client-logo logo-record">
+                    <img src="/images/logos/nexgen-logo.png" alt="NexGen" class="client-logo logo-nexgen">
+                </div>
             </div>
         </div>
     </section>
