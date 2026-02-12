@@ -573,6 +573,9 @@ title: "Magnate | B2B Narrative & Content Consultancy"
             function onAllLoaded() {
                 var trackWidth = track.offsetWidth;
 
+                // Don't animate if marquee is hidden (desktop)
+                if (trackWidth === 0) return;
+
                 // Clone track until we have enough to fill 2x viewport
                 var clonesNeeded = Math.ceil((window.innerWidth * 2) / trackWidth) + 1;
                 for (var i = 0; i < clonesNeeded; i++) {
